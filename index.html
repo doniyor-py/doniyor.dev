@@ -6,22 +6,22 @@
     <meta name="theme-color" content="#0ea5e9" />
     <meta
       name="description"
-      content="Doniyor Mekhmonov — Python, SQL, R, full-stack proofs. Portfolio: Finoks AR/AP agent, Telegram fitness assistant, London bikes (R), Premier League (Python), Apple sales SQL."
+      content="Doniyor Mekhmonov — Python, SQL, R, Power BI. Portfolio: Finoks AR/AP agent, Telegram fitness assistant, London bikes (R), Premier League (Python), Apple sales SQL."
     />
-    <title>Doniyor Mekhmonov | Data Analyst — Python, SQL & Full-Stack Projects</title>
+    <title>Doniyor Mekhmonov | Data Analyst — Python, SQL & Power BI</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./assets/profile.png" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Doniyor Mekhmonov" />
-    <meta property="og:title" content="Doniyor Mekhmonov | Data Analyst — Python, SQL & Full-Stack Projects" />
+    <meta property="og:title" content="Doniyor Mekhmonov | Data Analyst — Python, SQL & Power BI" />
     <meta
       property="og:description"
-      content="Doniyor Mekhmonov — Python, SQL, R, full-stack proofs: Finoks, Telegram fitness bot, London bikes, Premier League, Apple SQL."
+      content="Doniyor Mekhmonov — Python, SQL, R, Power BI. Finoks, Telegram fitness bot, London bikes, Premier League, Apple SQL."
     />
     <meta property="og:image" content="./assets/profile.png" />
     <meta property="og:image:alt" content="Portrait of Doniyor Mekhmonov" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Doniyor Mekhmonov | Data Analyst — Python, SQL & Full-Stack Projects" />
+    <meta name="twitter:title" content="Doniyor Mekhmonov | Data Analyst — Python, SQL & Power BI" />
     <meta
       name="twitter:description"
       content="Portfolio: Finoks AR/AP agent, Telegram fitness assistant, Python & SQL analytics, R mobility work."
@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -79,11 +79,19 @@
     </header>
 
     <main>
-      <section class="hero container">
-        <div class="hero-layout">
-          <div>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy">
             <p class="eyebrow">Portfolio</p>
-            <h1>Data Analyst — Python, SQL, Power BI — analytics and full-stack projects from raw data to shipped apps</h1>
+            <h1 id="hero-title" class="hero-headline">
+              Data Analyst —
+              <span class="hero-headline-accent">Python · SQL · Power BI</span>
+              <span class="hero-headline-lede">
+                I turn messy tables into answers that still make sense after the fifth “why?” — clean joins,
+                explicit definitions, and narratives you can defend when the room goes quiet.
+              </span>
+            </h1>
             <p class="hero-text">
               B.Sc. Computing Systems at Ulster University (predicted First Class), based in London. I like
               problems where the messy bit is not the model, but the join: calendars, hubs, duplicates, and
@@ -103,7 +111,7 @@
         </div>
       </section>
 
-      <section class="section container" id="about">
+      <section class="section section-reveal container" id="about">
         <h2>About</h2>
         <div class="about-copy">
           <p>
@@ -112,7 +120,7 @@
             the chain from definition → query → chart → decision. That is why my public work spans different
             shapes of data <em>and</em> surfaces: mobility (Santander Cycles in R), structured sport results
             (Premier League in Python), transactional retail (Apple global sales in MySQL with views and
-            stored procedures), plus recent full-stack proofs — Finoks (AR/AP agent with a React UI and guarded
+            stored procedures), plus recent shipped products — Finoks (AR/AP agent with a React UI and guarded
             autonomy) and a Telegram fitness assistant wired to Claude, Supabase, and provider integrations.
           </p>
           <p>
@@ -131,7 +139,7 @@
         </div>
       </section>
 
-      <section class="section container" id="skills">
+      <section class="section section-reveal container" id="skills">
         <h2>Technical skills</h2>
         <p class="section-lead">
           Levels are honest signals, not decoration — tied to what I have actually shipped in repos and
@@ -148,7 +156,7 @@
                   backend (FastAPI agent loop, SQLite, integrations).</span>
               </li>
               <li>
-                <span class="skill-name">Full-stack apps</span>
+                <span class="skill-name">Apps &amp; integrations</span>
                 <span class="skill-level">Shipped</span>
                 <span class="skill-note">FastAPI · React/Vite · WebSockets · TypeScript backends (Telegram
                   webhook, Supabase migrations, OAuth flows).</span>
@@ -195,7 +203,7 @@
         </article>
       </section>
 
-      <section class="section container" id="projects">
+      <section class="section section-reveal container" id="projects">
         <h2>Projects</h2>
         <p class="section-lead">
           Click a card to open the full write-up, charts where relevant, and the GitHub repository.
@@ -311,7 +319,7 @@
         </div>
       </section>
 
-      <section class="section container" id="experience">
+      <section class="section section-reveal container" id="experience">
         <h2>Work experience</h2>
         <article class="card">
           <h3>Floor staff — Aqua Shard, London</h3>
@@ -324,7 +332,7 @@
         </article>
       </section>
 
-      <section class="section container" id="education">
+      <section class="section section-reveal container" id="education">
         <h2>Education & awards</h2>
         <article class="card">
           <h3>Ulster University — B.Sc. Computing Systems</h3>
@@ -341,7 +349,7 @@
       </section>
     </main>
 
-    <section class="section container" id="contact-form">
+    <section class="section section-reveal container" id="contact-form">
       <h2>Contact me</h2>
       <p>Send a message — I usually reply within a day or two.</p>
       <p id="contact-form-success" class="form-success-banner" hidden role="status">

@@ -1,3 +1,31 @@
+(function initScrollReveal() {
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (reduce.matches) return;
+
+  document.documentElement.classList.add("js-motion");
+
+  const sections = document.querySelectorAll(".section-reveal");
+  if (!("IntersectionObserver" in window)) {
+    sections.forEach((el) => el.classList.add("section-reveal--visible"));
+    return;
+  }
+
+  if (!sections.length) return;
+
+  const io = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("section-reveal--visible");
+        obs.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "0px 0px -10% 0px", threshold: 0.06 }
+  );
+
+  sections.forEach((el) => io.observe(el));
+})();
+
 const toTopBtn = document.getElementById("toTopBtn");
 
 const toggleToTopButton = () => {
