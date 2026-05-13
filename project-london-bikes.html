@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta
+      name="description"
+      content="London Santander Cycles analysis (Aug 2023) — R, R Markdown: trip duration, station demand, weekday peaks vs weekends, TfL-style insights."
+    />
+    <title>London Bike Analysis | Doniyor Mekhmonov</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/profile.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Doniyor Mekhmonov" />
+    <meta property="og:title" content="London Bike Analysis | Doniyor Mekhmonov" />
+    <meta
+      property="og:description"
+      content="London Santander Cycles analysis (Aug 2023) — R, R Markdown: trip duration, station demand, weekday peaks vs weekends, TfL-style insights."
+    />
+    <meta property="og:image" content="./assets/projects/london-bikes-trips-by-hour.png" />
+    <meta property="og:image:alt" content="Chart: Santander Cycles trips by hour of day" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="London Bike Analysis | Doniyor Mekhmonov" />
+    <meta
+      name="twitter:description"
+      content="London Santander Cycles analysis — R, R Markdown: trip duration, station demand, weekday peaks vs weekends."
+    />
+    <meta name="twitter:image" content="./assets/projects/london-bikes-trips-by-hour.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <div class="nav-brand-area">
+          <a class="brand" href="./index.html#top">Doniyor Mekhmonov</a>
+        </div>
+        <nav aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#skills">Skills</a></li>
+            <li><a href="./index.html#projects">Projects</a></li>
+            <li>
+              <a href="https://github.com/doniyor-py" target="_blank" rel="noreferrer" class="nav-highlight"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/doniyor-mekhmonov-a50b64329"
+                target="_blank"
+                rel="noreferrer"
+                class="nav-highlight"
+                >LinkedIn</a
+              >
+            </li>
+            <li><a href="./index.html#contact-form">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-page container">
+      <p class="project-back"><a href="./index.html#projects">← Back to projects</a></p>
+      <p class="project-meta">Santander Cycles · Dataset: August 2023 · Built March 2026</p>
+      <h1 class="project-title">London Bike Journey Analysis</h1>
+      <p class="stack project-tools">
+        <strong>Tools:</strong> R · RStudio · R Markdown · ggplot2 (visualisations)
+      </p>
+
+      <figure class="project-figure">
+        <img
+          src="./assets/projects/london-bikes-trips-by-hour.png"
+          alt="Line chart: number of bike trips by hour of day, showing weekday peaks"
+          width="900"
+          height="520"
+          loading="lazy"
+        />
+        <figcaption>Trips by hour — weekday double-peak vs flatter weekend pattern.</figcaption>
+      </figure>
+
+      <div class="project-body">
+        <p>
+          This analysis of London’s Santander Cycles data for August 2023 reveals several clear patterns:
+          the <strong>median trip duration is approximately 14 minutes</strong>, with
+          <strong>weekend journeys averaging longer than weekday ones</strong> — suggesting a shift from
+          commuting to leisure use.
+        </p>
+        <p>
+          A <strong>small number of central London stations dominate demand</strong>, particularly those near
+          major transport hubs and tourist areas.
+        </p>
+        <p>
+          <strong>Usage follows a clear double-peak pattern on weekdays (8–9am and 5–6pm)</strong>, while
+          <strong>weekends show a flatter, midday-centred distribution</strong>.
+        </p>
+        <p>
+          These insights could help TfL <strong>optimise bike redistribution</strong>,
+          <strong>prioritise dock maintenance</strong>, and <strong>plan capacity during peak periods</strong>.
+        </p>
+        <p>
+          The work is documented as a knitted R Markdown report, with reproducible code and charts suitable
+          for stakeholder-style storytelling.
+        </p>
+      </div>
+
+      <p class="project-proof">
+        <a class="btn btn-primary" href="https://github.com/doniyor-py/london-bike-analysis" target="_blank" rel="noreferrer"
+          >View repository →</a
+        >
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="footer-name">Doniyor Mekhmonov</span>
+        <nav class="footer-nav" aria-label="Footer links">
+          <a href="mailto:mekhmonovd@gmail.com">mekhmonovd@gmail.com</a>
+          <a href="https://github.com/doniyor-py" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/doniyor-mekhmonov-a50b64329" target="_blank" rel="noreferrer"
+            >LinkedIn</a
+          >
+        </nav>
+      </div>
+    </footer>
+    <button class="to-top" id="toTopBtn" aria-label="Back to top">↑</button>
+    <script src="./script.js"></script>
+  </body>
+</html>

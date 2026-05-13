@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta
+      name="description"
+      content="Apple global sales SQL portfolio: MySQL schema, load, cleaning, 30 business questions, CTEs, window functions, views & stored procedures — proof on GitHub."
+    />
+    <title>Apple Global Sales (SQL) | Doniyor Mekhmonov</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/profile.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Doniyor Mekhmonov" />
+    <meta property="og:title" content="Apple Global Sales (SQL) | Doniyor Mekhmonov" />
+    <meta
+      property="og:description"
+      content="Apple global sales SQL portfolio: MySQL schema, load, cleaning, 30 business questions, CTEs, window functions, views & stored procedures — proof on GitHub."
+    />
+    <meta property="og:image" content="./assets/profile.png" />
+    <meta property="og:image:alt" content="Doniyor Mekhmonov — data analyst portfolio" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Apple Global Sales (SQL) | Doniyor Mekhmonov" />
+    <meta
+      name="twitter:description"
+      content="MySQL end-to-end SQL: schema, 30 business questions, CTEs, views, stored procedures — Apple global sales dataset."
+    />
+    <meta name="twitter:image" content="./assets/profile.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <div class="nav-brand-area">
+          <a class="brand" href="./index.html#top">Doniyor Mekhmonov</a>
+        </div>
+        <nav aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#skills">Skills</a></li>
+            <li><a href="./index.html#projects">Projects</a></li>
+            <li>
+              <a href="https://github.com/doniyor-py" target="_blank" rel="noreferrer" class="nav-highlight"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/doniyor-mekhmonov-a50b64329"
+                target="_blank"
+                rel="noreferrer"
+                class="nav-highlight"
+                >LinkedIn</a
+              >
+            </li>
+            <li><a href="./index.html#contact-form">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-page container">
+      <p class="project-back"><a href="./index.html#projects">← Back to projects</a></p>
+      <p class="project-meta">Transactions Jan 2022 – Dec 2024 · Built Dec 2025</p>
+      <h1 class="project-title">Apple Global Sales — End-to-End SQL</h1>
+      <p class="stack project-tools"><strong>Tools:</strong> MySQL · SQL scripts (schema → load → clean → analyse)</p>
+
+      <div class="project-body">
+        <p>
+          This is deliberately “analyst engineering”: not a single ad-hoc query, but a repeatable database
+          story. The repo walks from <strong>CREATE TABLE</strong> with sensible types and constraints through
+          <strong>LOAD DATA</strong>, cleaning passes (<code>UPDATE</code>, <code>TRIM</code>,
+          <code>NULLIF</code>), then layered analysis on <strong>11,500 rows</strong> and
+          <strong>27 columns</strong> spanning regions, channels, discounts, returns, and customer segments
+          (Kaggle-based Apple global sales dataset).
+        </p>
+        <p>
+          I <strong>answered 30 structured business questions</strong> grouped by theme — sales performance,
+          geography, product mix, customer behaviour, returns/ratings, and advanced window logic (rolling
+          revenue, ranked products per region, running totals by channel). The proof is in numbered SQL files
+          so a reviewer can open <code>05_business_q1_q5.sql</code> … <code>10_business_q26_q30.sql</code> and
+          follow the narrative in order.
+        </p>
+        <p>
+          On top of queries, the project ships <strong>reusable views</strong> (monthly revenue, category KPIs,
+          regional summary, customer scorecard, channel performance) and <strong>five stored procedures</strong>
+          parameterised for year, category, date range, region, and channel — the kind of layer you would hand
+          to BI or ops instead of re-writing the same SQL every Monday.
+        </p>
+      </div>
+
+      <p class="project-proof">
+        <a class="btn btn-primary" href="https://github.com/doniyor-py/apple-sql-project" target="_blank" rel="noreferrer"
+          >View repository →</a
+        >
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="footer-name">Doniyor Mekhmonov</span>
+        <nav class="footer-nav" aria-label="Footer links">
+          <a href="mailto:mekhmonovd@gmail.com">mekhmonovd@gmail.com</a>
+          <a href="https://github.com/doniyor-py" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/doniyor-mekhmonov-a50b64329" target="_blank" rel="noreferrer"
+            >LinkedIn</a
+          >
+        </nav>
+      </div>
+    </footer>
+    <button class="to-top" id="toTopBtn" aria-label="Back to top">↑</button>
+    <script src="./script.js"></script>
+  </body>
+</html>
