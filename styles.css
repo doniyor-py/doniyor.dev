@@ -176,7 +176,7 @@ h1:not(.hero-headline) {
   line-height: 1.58;
   letter-spacing: -0.015em;
   color: var(--muted);
-  margin-top: 1.15rem;
+  margin: 0 0 1.15rem;
   max-width: 38ch;
   font-family: Inter, system-ui, sans-serif;
 }
@@ -482,11 +482,13 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.75rem;
-  color: var(--muted);
-  letter-spacing: 0.06em;
+  font-size: 1.05rem;
+  color: #ffffff;
+  letter-spacing: 0.04em;
   min-height: 7.5rem;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-indigo) 100%);
 }
 
 .project-card-date {
