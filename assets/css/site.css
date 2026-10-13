@@ -469,6 +469,33 @@ main {
   margin-top: 1.75rem;
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 18rem);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.hero-photo img {
+  width: 100%;
+  aspect-ratio: 320 / 411;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 52rem) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  /* On small screens the photo becomes a compact portrait above the greeting. */
+  .hero-photo {
+    order: -1;
+    width: 8rem;
+  }
+}
+
 /* ---------- Stats + hire card ---------- */
 
 .glance {
@@ -803,36 +830,12 @@ main {
 
 /* ---------- About ---------- */
 
-.about-intro {
-  display: grid;
-  grid-template-columns: minmax(0, 17.5rem) 1fr;
-  gap: clamp(1.5rem, 5vw, 3.5rem);
-  align-items: start;
-}
-
-.about-photo img {
-  width: 100%;
-  aspect-ratio: 320 / 411;
-  object-fit: cover;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-}
-
 .about-copy {
   max-width: var(--measure);
 }
 
 .about-copy p {
   font-size: 1.125rem;
-}
-
-@media (max-width: 44rem) {
-  .about-intro {
-    grid-template-columns: 1fr;
-  }
-  .about-photo {
-    max-width: 13rem;
-  }
 }
 
 .facts {
