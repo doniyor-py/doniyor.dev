@@ -252,9 +252,10 @@ ul {
     width: 100%;
   }
   .nav-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 0.3rem;
+  }
+  .nav-list li {
+    flex: 1 1 auto;
   }
   .nav-list a {
     padding: 0 0.25rem;
@@ -469,30 +470,70 @@ main {
   margin-top: 1.75rem;
 }
 
+/* One avatar element, placed by grid areas:
+   small screens -> 72px circle on the greeting's line; desktop -> large circle beside the text. */
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 18rem);
-  gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    "avatar hi"
+    "text text";
+  column-gap: 0.75rem;
   align-items: center;
 }
 
-.hero-photo img {
-  width: 100%;
-  aspect-ratio: 320 / 411;
-  object-fit: cover;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
+.hero-avatar {
+  grid-area: avatar;
+  width: 72px;
+  height: 72px;
+  cursor: default;
 }
 
-@media (max-width: 52rem) {
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 25%;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  box-shadow: 0 0 32px rgb(240 163 94 / 0.12);
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-grid .hero-hi {
+  grid-area: hi;
+  margin: 0;
+}
+
+.hero-text {
+  grid-area: text;
+  margin-top: 1rem;
+}
+
+@media (min-width: 52rem) {
   .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-columns: minmax(0, 1fr) 17.5rem;
+    grid-template-areas:
+      "hi avatar"
+      "text avatar";
+    column-gap: clamp(2rem, 5vw, 4rem);
+    align-items: start;
   }
-  /* On small screens the photo becomes a compact portrait above the greeting. */
-  .hero-photo {
-    order: -1;
-    width: 8rem;
+  .hero-avatar {
+    width: 17.5rem;
+    height: 17.5rem;
+    align-self: center;
+  }
+  .hero-avatar img {
+    box-shadow: 0 0 64px rgb(240 163 94 / 0.12);
+  }
+  .hero-grid .hero-hi {
+    margin-bottom: 0.5rem;
+  }
+  .hero-text {
+    margin-top: 0;
   }
 }
 
