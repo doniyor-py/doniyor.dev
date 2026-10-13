@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://doniyor.dev/sitemap.xml

@@ -1,375 +1,165 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0ea5e9" />
-    <meta
-      name="description"
-      content="Doniyor Mekhmonov — Software Engineer building full-stack products with LLMs wired in: FastAPI + React agent systems, TypeScript integrations, Python/SQL data work. Based in London."
-    />
-    <title>Doniyor Mekhmonov | Software Engineer — AI/ML & Full-Stack</title>
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./assets/profile.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Doniyor Mekhmonov · AI-native Backend Engineer in London</title>
+    <meta name="description" content="Doniyor Mekhmonov is an AI-native backend engineer in London building APIs and agents with Python, FastAPI, the Claude API, Redis and Docker." />
+    <link rel="canonical" href="https://doniyor.dev/" />
+    <meta name="theme-color" content="#151312" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Doniyor Mekhmonov" />
-    <meta property="og:title" content="Doniyor Mekhmonov | Software Engineer — AI/ML & Full-Stack" />
-    <meta
-      property="og:description"
-      content="Software Engineer building full-stack products with LLMs wired in: FastAPI + React agent systems, TypeScript integrations, Python/SQL data work."
-    />
-    <meta property="og:image" content="./assets/profile.png" />
-    <meta property="og:image:alt" content="Portrait of Doniyor Mekhmonov" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content="Doniyor Mekhmonov · AI-native Backend Engineer in London" />
+    <meta property="og:description" content="Doniyor Mekhmonov is an AI-native backend engineer in London building APIs and agents with Python, FastAPI, the Claude API, Redis and Docker." />
+    <meta property="og:url" content="https://doniyor.dev/" />
+    <meta property="og:image" content="https://doniyor.dev/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Doniyor Mekhmonov, Backend Engineer" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Doniyor Mekhmonov | Software Engineer — AI/ML & Full-Stack" />
-    <meta
-      name="twitter:description"
-      content="Software Engineer building full-stack products with LLMs wired in: FastAPI + React agent systems, TypeScript, Python/SQL."
-    />
-    <meta name="twitter:image" content="./assets/profile.png" />
-    <!-- If a social preview misses the image, set og:image and twitter:image above to absolute https://... URLs. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
+    <meta name="twitter:title" content="Doniyor Mekhmonov · AI-native Backend Engineer in London" />
+    <meta name="twitter:description" content="Doniyor Mekhmonov is an AI-native backend engineer in London building APIs and agents with Python, FastAPI, the Claude API, Redis and Docker." />
+    <meta name="twitter:image" content="https://doniyor.dev/assets/og.png" />
+    <link rel="preload" href="/assets/fonts/geist-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Doniyor Mekhmonov", "url": "https://doniyor.dev/", "image": "https://doniyor.dev/assets/img/profile-600.webp", "jobTitle": "Backend Engineer", "description": "AI-native backend engineer working with Python, FastAPI, the Claude API, Redis and Docker.", "address": {"@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB"}, "affiliation": {"@type": "CollegeOrUniversity", "name": "Ulster University"}, "knowsLanguage": ["uz", "ru", "en"], "sameAs": ["https://github.com/doniyor-py", "https://www.linkedin.com/in/doniyormekhmonov-a50b64329"]}</script>
   </head>
   <body>
-    <header class="site-header" id="top">
-      <div class="container nav-wrap">
-        <div class="nav-brand-area">
-          <a class="brand" href="#top">Doniyor Mekhmonov</a>
-        </div>
-        <nav aria-label="Primary navigation">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap nav-bar">
+        <a class="brand" href="/">Doniyor Mekhmonov<span>.</span></a>
+        <nav aria-label="Main">
           <ul class="nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li>
-              <a href="https://github.com/doniyor-py" target="_blank" rel="noreferrer" class="nav-highlight"
-                >GitHub</a
-              >
-            </li>
-            <li><a href="#contact-form">Contact</a></li>
+          <li><a href="/" aria-current="page">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/work/">Work</a></li>
+          <li><a href="/experience/">Experience</a></li>
+          <li><a href="/notes/">Notes</a></li>
+          <li><a href="/contact/">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <main id="main">
+      <section class="wrap hero" aria-labelledby="hero-title">
+        <p class="hero-hi">Hi, I&rsquo;m Doniyor &mdash;</p>
+        <h1 id="hero-title">Backend Engineer<span class="dot">.</span></h1>
+        <p class="hero-intro">I build <strong>AI-native backends</strong>: APIs and agents with Python, FastAPI and the Claude API, shipped with Redis and Docker.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/work/">View my work</a>
+          <a class="btn" href="/docs/Doniyor_Mekhmonov_CV.pdf" download>Download CV</a>
+        </div>
+      </section>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-backdrop" aria-hidden="true"></div>
-        <div class="container hero-layout">
-          <div class="hero-copy">
-            <p class="eyebrow">Portfolio</p>
-            <h1 id="hero-title" class="hero-headline">
-              Software Engineer —
-              <span class="hero-headline-accent">Python · TypeScript · AI/ML</span>
-            </h1>
-            <p class="hero-headline-lede">
-              I build production-shaped software — APIs, agents, and interfaces — with LLMs wired in as a
-              first-class part of the system, not a bolt-on demo.
-            </p>
-            <p class="hero-text">
-              B.Sc. Computing Systems at Ulster University (predicted First Class), based in London. I like
-              shipping things that behave correctly under real constraints — auth, concurrency, cost, and the
-              edge cases users actually hit.
-            </p>
-            <div class="cta-group">
-              <a class="btn btn-primary" href="#projects">View projects</a>
-              <a class="btn btn-secondary" href="./docs/Doniyor_Mekhmonov_CV.pdf" download>Download CV</a>
-            </div>
+      <section class="wrap" aria-labelledby="stats-title">
+        <h2 id="stats-title" class="visually-hidden">At a glance</h2>
+        <dl class="stats">
+          <div class="stat"><dt>projects built on the Claude API</dt><dd>3</dd></div>
+          <div class="stat"><dt>hackathons</dt><dd><span class="todo">[TODO]</span></dd></div>
+          <div class="stat"><dt>certifications</dt><dd>4</dd></div>
+          <div class="stat"><dt>languages spoken</dt><dd>3</dd></div>
+        </dl>
+        <div class="card available">
+          <span class="pulse" aria-hidden="true"></span>
+          <div>
+            <p class="available-title">Available</p>
+            <p class="available-body">Open to graduate &amp; junior backend roles from June 2027, and part-time roles now.</p>
           </div>
-          <picture>
-            <source srcset="./assets/profile.webp" type="image/webp" />
-            <img
-              class="profile-image"
-              src="./assets/profile.png"
-              alt="Portrait of Doniyor Mekhmonov"
-            />
-          </picture>
+          <a class="btn btn-sm" href="/contact/">Get in touch</a>
         </div>
       </section>
 
-      <section class="section section-reveal container" id="about">
-        <h2>About</h2>
-        <div class="about-copy">
-          <p>
-            I write software that ships, not just notebooks. Finoks is an AR/AP agent with a FastAPI backend, a
-            React UI, and tiered autonomy (AUTO / ESCALATE / HARD_BLOCK) so an LLM makes decisions without
-            going rogue. My Telegram fitness assistant wires Claude into real workflows — Supabase, OAuth for
-            Strava and Garmin, encrypted credentials, a production-shaped deploy. Underneath both is the same
-            instinct: define the contract, handle the edge case, and keep the system explainable when it is
-            wrong. The code is the proof — open a repo rather than take my word for it.
-          </p>
-          <p>
-            I am looking for a <strong>Software Engineer or AI/ML role</strong> where I can build end-to-end —
-            backend, frontend, and the model integration in between. I bring Python and TypeScript fluency,
-            hands-on experience wiring LLMs into real products (prompting, guardrails, autonomy tiers, tool
-            use), and a data background (SQL, Python, R) that lets me reason about what is feeding a model, not
-            just the API call. I currently work part-time at Aqua Shard alongside full-time study, which
-            sharpened the pace and precision I bring to shipping under pressure.
-          </p>
+      <section class="section wrap" aria-labelledby="work-title">
+        <div class="section-head">
+          <h2 id="work-title">Selected work</h2>
+          <a href="/work/">All projects &rarr;</a>
+        </div>
+        <ul class="row-list">
+          <li>
+            <a class="row-link" href="/work/#finops-agent">
+              <span class="row-title">FinOps Agent</span>
+              <span class="row-meta">Autonomous accounts-receivable agent with a three-tier autonomy gate.</span>
+              <span class="row-stack">FastAPI · Claude API · JWT</span>
+            </a>
+          </li>
+          <li>
+            <a class="row-link" href="/work/#pr-assistant-api">
+              <span class="row-title">PR Assistant API</span>
+              <span class="row-meta"><span class="todo">[TODO: one-line description of what the PR Assistant API does]</span></span>
+              <span class="row-stack">FastAPI · Redis · Claude API</span>
+            </a>
+          </li>
+          <li>
+            <a class="row-link" href="/work/#fitflow">
+              <span class="row-title">FitFlow</span>
+              <span class="row-meta">Telegram coaching bot grounded in your Strava data.</span>
+              <span class="row-stack">Claude API · Supabase · Strava OAuth2</span>
+            </a>
+          </li>
+          <li>
+            <a class="row-link" href="/work/#london-blue-plaques">
+              <span class="row-title">London Blue Plaques Explorer</span>
+              <span class="row-meta">Flask + MongoDB REST API on Open Plaques data.</span>
+              <span class="row-stack">Python · Flask · MongoDB</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section wrap" aria-labelledby="stack-title">
+        <div class="section-head">
+          <h2 id="stack-title">Tech stack</h2>
+        </div>
+        <div class="stack-grid">
+          <div class="card">
+            <h3>Languages</h3>
+            <ul class="tags"><li>Python</li><li>TypeScript</li><li>SQL</li><li>R</li></ul>
+          </div>
+          <div class="card">
+            <h3>Backend</h3>
+            <ul class="tags"><li>FastAPI</li><li>Flask</li><li>Node.js</li><li>REST APIs</li><li>WebSockets</li><li>JWT &amp; bcrypt auth</li><li>OAuth2</li><li>pytest</li></ul>
+          </div>
+          <div class="card">
+            <h3>Databases</h3>
+            <ul class="tags"><li>PostgreSQL (Supabase)</li><li>Redis</li><li>MongoDB</li><li>SQLite</li><li>MySQL</li></ul>
+          </div>
+          <div class="card">
+            <h3>AI</h3>
+            <ul class="tags"><li>Claude API</li><li>Tool use &amp; agent loops</li><li>Prompt design &amp; guardrails</li><li>Claude Code</li></ul>
+          </div>
+          <div class="card">
+            <h3>DevOps &amp; Tools</h3>
+            <ul class="tags"><li>Docker</li><li>Render</li><li>Git &amp; GitHub</li><li>Jupyter &amp; Pandas</li><li>Power BI</li></ul>
+          </div>
         </div>
       </section>
 
-      <section class="section section-reveal container" id="skills">
-        <h2>Technical skills</h2>
-        <p class="section-lead">
-          Levels are honest signals, not decoration — tied to what I have actually shipped, not just studied.
-        </p>
-        <div class="grid grid-2 skill-grid">
-          <article class="card skill-tier">
-            <h3>Core stack / shipped in production</h3>
-            <ul class="skill-list">
-              <li>
-                <span class="skill-name">Python</span>
-                <span class="skill-level">Advanced</span>
-                <span class="skill-note">Finoks backend (FastAPI agent loop, SQLite, integrations) ·
-                  Premier League analysis (Pandas, Jupyter, 15+ charts).</span>
-              </li>
-              <li>
-                <span class="skill-name">TypeScript &amp; full-stack</span>
-                <span class="skill-level">Shipped</span>
-                <span class="skill-note">FastAPI · React/Vite · WebSockets · Telegram webhook, Supabase
-                  migrations, OAuth flows.</span>
-              </li>
-              <li>
-                <span class="skill-name">LLM &amp; agent integration</span>
-                <span class="skill-level">Shipped</span>
-                <span class="skill-note">Claude tool use, prompt design, guardrails, and AUTO / ESCALATE /
-                  HARD_BLOCK autonomy tiers in production.</span>
-              </li>
-            </ul>
-          </article>
-          <article class="card skill-tier">
-            <h3>Data &amp; infrastructure</h3>
-            <ul class="skill-list">
-              <li>
-                <span class="skill-name">SQL (MySQL)</span>
-                <span class="skill-level">Intermediate</span>
-                <span class="skill-note">Apple SQL project: schema, load, 30 business questions, CTEs,
-                  windows, views, stored procedures.</span>
-              </li>
-              <li>
-                <span class="skill-name">Auth &amp; integrations</span>
-                <span class="skill-level">Shipped</span>
-                <span class="skill-note">OAuth (Strava, Garmin), encrypted credential storage, Docker
-                  deploys, Supabase/Postgres.</span>
-              </li>
-              <li>
-                <span class="skill-name">R · Power BI · Git</span>
-                <span class="skill-level">Daily tools</span>
-                <span class="skill-note">London bike analysis in R; dashboard coursework; versioned,
-                  reproducible work.</span>
-              </li>
-            </ul>
-          </article>
+      <!-- Latest writing: hidden until the first note is published on /notes/. -->
+
+      <section class="section wrap cta-band" aria-labelledby="cta-title">
+        <h2 id="cta-title">Hiring for a backend role?</h2>
+        <p class="lede">I&rsquo;m a final-year Computing Systems student at Ulster University London, graduating in May 2027.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/contact/">Contact me</a>
+          <a class="btn" href="/about/">More about me</a>
         </div>
-        <article class="card section-tight">
-          <h3>Competencies</h3>
-          <ul class="inline-tags">
-            <li>API design & backend architecture</li>
-            <li>LLM / agent integration & guardrails</li>
-            <li>Auth & OAuth flows</li>
-            <li>SQL & data modelling</li>
-            <li>Testing & Docker deployment</li>
-          </ul>
-        </article>
-      </section>
-
-      <section class="section section-reveal container" id="projects">
-        <h2>Projects</h2>
-        <p class="section-lead">
-          Click a card to open the full write-up, charts where relevant, and the GitHub repository.
-        </p>
-        <div class="grid grid-projects">
-          <a class="card project-card-link" href="./project-finoks.html">
-            <span class="project-card-thumb-wrap project-card-thumb-placeholder" aria-hidden="true">Finoks</span>
-            <span class="project-card-date">Apr 2026</span>
-            <h3>Finoks — AR/AP agent (FastAPI + React)</h3>
-            <p class="stack">Python · FastAPI · React · Vite · WebSocket · SQLite · Claude</p>
-            <p class="project-card-teaser">
-              Autonomous invoice workflow for UK SMEs: AML-aware screening, statutory interest logic, and
-              AUTO / ESCALATE / HARD_BLOCK autonomy tiers with a live demo UI.
-            </p>
-            <span class="project-card-cta">Open project →</span>
-          </a>
-
-          <a class="card project-card-link" href="./project-fitness-telegrambot.html">
-            <span class="project-card-thumb-wrap">
-              <img
-                class="project-card-thumb"
-                src="./assets/projects/fitness-telegrambot-chat.png"
-                alt="Telegram chat: bot reply with workout summary and a two-month training plan"
-                width="400"
-                height="220"
-                loading="lazy"
-              />
-            </span>
-            <span class="project-card-date">Apr–May 2026</span>
-            <h3>Telegram fitness assistant (TypeScript)</h3>
-            <p class="stack">TypeScript · Supabase · Claude · Strava OAuth · Docker</p>
-            <p class="project-card-teaser">
-              Workout sync, provider connect commands, encrypted credential patterns for Garmin, and Claude
-              answers grounded in recent activity — production-shaped deploy story.
-            </p>
-            <span class="project-card-cta">Open project →</span>
-          </a>
-
-          <a class="card project-card-link" href="./project-london-bikes.html">
-            <span class="project-card-thumb-wrap">
-              <img
-                class="project-card-thumb"
-                src="./assets/projects/london-bikes-trips-by-hour.png"
-                alt=""
-                width="400"
-                height="220"
-                loading="lazy"
-              />
-            </span>
-            <span class="project-card-date">Aug 2023 data · Built 2025</span>
-            <h3>London Santander Cycles (R)</h3>
-            <p class="stack">R · RStudio · R Markdown · ggplot2</p>
-            <p class="project-card-teaser">
-              Trip duration, station gravity, weekday double peaks vs weekend leisure curve — TfL-style
-              operational angles.
-            </p>
-            <span class="project-card-cta">Open project →</span>
-          </a>
-
-          <a class="card project-card-link" href="./project-premier-league.html">
-            <span class="project-card-thumb-wrap">
-              <img
-                class="project-card-thumb"
-                src="./assets/projects/premier-league-margin-wins.png"
-                alt=""
-                width="400"
-                height="220"
-                loading="lazy"
-              />
-            </span>
-            <span class="project-card-date">2023/24–2025/26 · Built 2024–2025</span>
-            <h3>Premier League performance (Python)</h3>
-            <p class="stack">Python · Pandas · Matplotlib · Seaborn · Jupyter</p>
-            <p class="project-card-teaser">
-              Multi-season merge, league table from scratch, home advantage, correlation work, and a full chart
-              set including margin wins and clean sheets.
-            </p>
-            <span class="project-card-cta">Open project →</span>
-          </a>
-
-          <a class="card project-card-link" href="./project-apple-sql.html">
-            <span class="project-card-thumb-wrap project-card-thumb-placeholder" aria-hidden="true">Apple SQL</span>
-            <span class="project-card-date">2022–2024 data · Built 2025</span>
-            <h3>Apple global sales (MySQL)</h3>
-            <p class="stack">MySQL · CTEs · window functions · views · stored procedures</p>
-            <p class="project-card-teaser">
-              11.5k transactions, 30 answered business questions, reusable views and five parameterised
-              procedures.
-            </p>
-            <span class="project-card-cta">Open project →</span>
-          </a>
-        </div>
-
-        <h3 class="subsection-title">Upcoming</h3>
-        <div class="grid grid-2">
-          <article class="card upcoming-card">
-            <h4>Agent evaluation harness</h4>
-            <p class="meta">Starting next</p>
-            <p>
-              A test suite for LLM agents — golden-path scenarios, guardrail regression tests, and scored
-              transcripts — the same rigor Finoks's autonomy tiers need, packaged so any agent can be evaluated
-              before a prompt or model change ships.
-            </p>
-          </article>
-          <article class="card upcoming-card">
-            <h4>ML model — trained, served, monitored</h4>
-            <p class="meta">Classic ML + deployment</p>
-            <p>
-              A model trained from scratch, not just an LLM call — scikit-learn or PyTorch — wrapped in a
-              FastAPI endpoint with versioning and basic latency/drift monitoring. Closing the loop from
-              notebook to production service.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-reveal container" id="experience">
-        <h2>Work experience</h2>
-        <article class="card">
-          <h3>Floor staff — Aqua Shard, London</h3>
-          <p class="meta">Jun 2025 – Present | Part-time (~20 hrs/week)</p>
-          <ul>
-            <li>High-standard guest service in a fine-dining, high-expectation environment.</li>
-            <li>Balanced with full-time study while maintaining a First Class average.</li>
-            <li>Composure, precision, and clear communication under pressure.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section class="section section-reveal container" id="education">
-        <h2>Education & awards</h2>
-        <article class="card">
-          <h3>Ulster University — B.Sc. Computing Systems</h3>
-          <p class="meta">Sep 2024 – May 2027 | London, England</p>
-          <p>Predicted classification: First Class</p>
-          <p>
-            Key modules: Databases, Statistics, Machine Learning, Algorithms, Software Engineering
-          </p>
-        </article>
-        <article class="card">
-          <h3>Dean's List</h3>
-          <p>Academic excellence, Ulster University (2024–2025).</p>
-        </article>
       </section>
     </main>
-
-    <section class="section section-reveal container" id="contact-form">
-      <h2>Contact me</h2>
-      <p>Send a message — I usually reply within a day or two.</p>
-      <p id="contact-form-success" class="form-success-banner" hidden role="status">
-        Thanks — your message was sent. I will get back to you soon.
-      </p>
-      <form id="portfolio-contact-form" class="contact-form" action="https://formspree.io/f/xvzdoknb" method="POST">
-        <input type="hidden" name="_subject" value="Portfolio contact form" />
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Your name" required />
-
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="you@example.com" required />
-
-        <label for="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          placeholder="Tell me about the role or project…"
-          required
-        ></textarea>
-
-        <button class="btn btn-primary" type="submit">Send message</button>
-      </form>
-    </section>
-
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <span class="footer-name">Doniyor Mekhmonov</span>
-        <nav class="footer-nav" aria-label="Footer links">
-          <a href="mailto:doniyormekhmon@gmail.com">doniyormekhmon@gmail.com</a>
-          <a href="https://github.com/doniyor-py" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/doniyor-mekhmonov-a50b64329" target="_blank" rel="noreferrer"
-            >LinkedIn</a
-          >
-        </nav>
+      <div class="wrap footer-inner">
+        <p class="muted" style="margin:0">&copy; 2026 Doniyor Mekhmonov · London</p>
+        <ul class="footer-links">
+          <li><a href="https://github.com/doniyor-py" rel="me noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/doniyormekhmonov-a50b64329" rel="me noopener">LinkedIn</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/docs/Doniyor_Mekhmonov_CV.pdf" download>CV (PDF)</a></li>
+        </ul>
       </div>
     </footer>
-
-    <button class="to-top" id="toTopBtn" aria-label="Back to top">↑</button>
-    <script src="./script.js"></script>
   </body>
 </html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Premier League Analysis (Python) · Doniyor Mekhmonov</title>
+    <meta name="description" content="Premier League match analytics, 2023/24 to 2025/26, in Python, Pandas and Jupyter: league tables, home advantage, margin wins, clean sheets and 15+ charts." />
+    <link rel="canonical" href="https://doniyor.dev/work/premier-league/" />
+    <meta name="theme-color" content="#151312" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Doniyor Mekhmonov" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content="Premier League Analysis (Python) · Doniyor Mekhmonov" />
+    <meta property="og:description" content="Premier League match analytics, 2023/24 to 2025/26, in Python, Pandas and Jupyter: league tables, home advantage, margin wins, clean sheets and 15+ charts." />
+    <meta property="og:url" content="https://doniyor.dev/work/premier-league/" />
+    <meta property="og:image" content="https://doniyor.dev/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Doniyor Mekhmonov, Backend Engineer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Premier League Analysis (Python) · Doniyor Mekhmonov" />
+    <meta name="twitter:description" content="Premier League match analytics, 2023/24 to 2025/26, in Python, Pandas and Jupyter: league tables, home advantage, margin wins, clean sheets and 15+ charts." />
+    <meta name="twitter:image" content="https://doniyor.dev/assets/og.png" />
+    <link rel="preload" href="/assets/fonts/geist-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap nav-bar">
+        <a class="brand" href="/">Doniyor Mekhmonov<span>.</span></a>
+        <nav aria-label="Main">
+          <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/work/" aria-current="page">Work</a></li>
+          <li><a href="/experience/">Experience</a></li>
+          <li><a href="/notes/">Notes</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <article class="wrap page-head prose">
+        <a class="back-link" href="/work/">&larr; All work</a>
+        <p class="eyebrow">Earlier data work</p>
+        <h1>Premier League performance analysis</h1>
+        <p class="muted">Match data 2023/24 &ndash; 2025/26 &middot; Built 2025&ndash;2026</p>
+        <ul class="tags"><li>Python 3.12</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li><li>Jupyter</li></ul>
+        <div style="margin-top:2rem">
+          <p>I picked football because every row is a story: a result is already a structured experiment in tactics, luck and sample size. Three seasons of Premier League fixtures (from football-data.co.uk) gave me enough volume to build a credible league table from scratch, stress-test aggregations, and still keep the narrative grounded for non-technical readers.</p>
+          <p>The pipeline loads and cleans multi-season CSVs, merges seasons consistently, then moves into EDA: home vs away splits, goal trends, the correlation between shots on target and goals, and team-level leaderboards. The outputs live as a chart library in the repo, including extremes like the biggest margin wins and defensive consistency (clean sheets).</p>
+          <figure class="figure">
+            <picture>
+            <source type="image/avif" srcset="/assets/img/work/premier-league-margin-wins-720.avif 720w, /assets/img/work/premier-league-margin-wins-989.avif 989w" sizes="(max-width: 46rem) 100vw, 44rem" />
+            <img src="/assets/img/work/premier-league-margin-wins-720.webp" srcset="/assets/img/work/premier-league-margin-wins-720.webp 720w, /assets/img/work/premier-league-margin-wins-989.webp 989w" sizes="(max-width: 46rem) 100vw, 44rem" alt="Horizontal bar chart of the ten biggest margin wins over three seasons" width="720" height="430" loading="lazy" decoding="async" />
+          </picture>
+            <figcaption>Top 10 biggest margin wins.</figcaption>
+          </figure>
+          <figure class="figure">
+            <picture>
+            <source type="image/avif" srcset="/assets/img/work/premier-league-clean-sheets-720.avif 720w, /assets/img/work/premier-league-clean-sheets-989.avif 989w" sizes="(max-width: 46rem) 100vw, 44rem" />
+            <img src="/assets/img/work/premier-league-clean-sheets-720.webp" srcset="/assets/img/work/premier-league-clean-sheets-720.webp 720w, /assets/img/work/premier-league-clean-sheets-989.webp 989w" sizes="(max-width: 46rem) 100vw, 44rem" alt="Horizontal bar chart of the ten teams with the most clean sheets over three seasons" width="720" height="357" loading="lazy" decoding="async" />
+          </picture>
+            <figcaption>Clean-sheet leaderboard: defensive signal beyond raw points.</figcaption>
+          </figure>
+        </div>
+        <div class="btn-row" style="margin-top:2rem">
+          <a class="btn btn-primary" href="https://github.com/doniyor-py/premier-league-analysis">View repository on GitHub</a>
+          <a class="btn" href="/work/">Back to all work</a>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p class="muted" style="margin:0">&copy; 2026 Doniyor Mekhmonov · London</p>
+        <ul class="footer-links">
+          <li><a href="https://github.com/doniyor-py" rel="me noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/doniyormekhmonov-a50b64329" rel="me noopener">LinkedIn</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/docs/Doniyor_Mekhmonov_CV.pdf" download>CV (PDF)</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

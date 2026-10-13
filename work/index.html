@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Work · Doniyor Mekhmonov</title>
+    <meta name="description" content="Projects by Doniyor Mekhmonov: FinOps Agent, PR Assistant API, FitFlow and London Blue Plaques Explorer, built with FastAPI, the Claude API, Redis and Docker." />
+    <link rel="canonical" href="https://doniyor.dev/work/" />
+    <meta name="theme-color" content="#151312" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Doniyor Mekhmonov" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content="Work · Doniyor Mekhmonov" />
+    <meta property="og:description" content="Projects by Doniyor Mekhmonov: FinOps Agent, PR Assistant API, FitFlow and London Blue Plaques Explorer, built with FastAPI, the Claude API, Redis and Docker." />
+    <meta property="og:url" content="https://doniyor.dev/work/" />
+    <meta property="og:image" content="https://doniyor.dev/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Doniyor Mekhmonov, Backend Engineer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Work · Doniyor Mekhmonov" />
+    <meta name="twitter:description" content="Projects by Doniyor Mekhmonov: FinOps Agent, PR Assistant API, FitFlow and London Blue Plaques Explorer, built with FastAPI, the Claude API, Redis and Docker." />
+    <meta name="twitter:image" content="https://doniyor.dev/assets/og.png" />
+    <link rel="preload" href="/assets/fonts/geist-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap nav-bar">
+        <a class="brand" href="/">Doniyor Mekhmonov<span>.</span></a>
+        <nav aria-label="Main">
+          <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/work/" aria-current="page">Work</a></li>
+          <li><a href="/experience/">Experience</a></li>
+          <li><a href="/notes/">Notes</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="wrap page-head" aria-labelledby="work-title">
+        <p class="eyebrow">Work</p>
+        <h1 id="work-title">Projects</h1>
+        <p class="lede">Backends and agents I&rsquo;ve built, strongest first. Each card covers the problem, what I built, the stack and where to see it.</p>
+      </section>
+
+      <section class="wrap" aria-labelledby="main-projects-title">
+        <h2 id="main-projects-title" class="visually-hidden">Main projects</h2>
+        <div class="grid grid-2">
+          <article class="card project" id="finops-agent">
+            <div class="project-top">
+              <h3>FinOps Agent</h3>
+              <span class="badge badge-accent">Hackathon</span>
+            </div>
+            <p class="project-summary">Autonomous accounts-receivable agent built at a London fintech hackathon (<span class="todo">[TODO: hackathon name and date]</span>).</p>
+            <dl class="pbs">
+              <div><dt>Problem</dt><dd>Small UK businesses lose time and cash chasing late invoices, and letting an LLM act freely on financial decisions isn&rsquo;t safe.</dd></div>
+              <div><dt>Built</dt><dd>A FastAPI agent that chases overdue invoices, screens counterparties for AML risk and applies UK Late Payment Act interest. Every action passes a three-tier autonomy gate (<code>AUTO</code> / <code>ESCALATE</code> / <code>HARD_BLOCK</code>), Claude drafts the emails, and the activity feed streams live over WebSockets behind JWT + bcrypt auth.</dd></div>
+              <div><dt>Stack</dt><dd><ul class="tags"><li>FastAPI</li><li>Claude API</li><li>JWT</li><li>bcrypt</li><li>WebSockets</li><li>SQLite</li><li>React</li></ul></dd></div>
+            </dl>
+            <div class="project-links"><a class="btn btn-sm btn-primary" href="/work/finops-agent/">Case study<span class="visually-hidden">: FinOps Agent</span></a><a class="btn btn-sm" href="https://github.com/doniyor-py/Finoks">GitHub<span class="visually-hidden">: FinOps Agent</span></a><span class="todo">[TODO: live demo URL]</span></div>
+          </article>
+          <article class="card project" id="pr-assistant-api">
+            <div class="project-top">
+              <h3>PR Assistant API</h3>
+              
+            </div>
+            <p class="project-summary"><span class="todo">[TODO: one-line description of what the PR Assistant API does]</span></p>
+            <dl class="pbs">
+              <div><dt>Problem</dt><dd><span class="todo">[TODO: the problem it solves]</span></dd></div>
+              <div><dt>Built</dt><dd>A FastAPI service backed by Redis and the Claude API, tested with pytest and packaged with Docker. <span class="todo">[TODO: key features / endpoints]</span></dd></div>
+              <div><dt>Stack</dt><dd><ul class="tags"><li>FastAPI</li><li>Redis</li><li>Claude API</li><li>pytest</li><li>Docker</li></ul></dd></div>
+            </dl>
+            <div class="project-links"><span class="todo">[TODO: GitHub repo URL]</span><span class="todo">[TODO: live demo URL (if any)]</span></div>
+          </article>
+          <article class="card project" id="fitflow">
+            <div class="project-top">
+              <h3>FitFlow</h3>
+              <span class="badge">Deployed</span>
+            </div>
+            <p class="project-summary">AI fitness-coaching bot on Telegram.</p>
+            <dl class="pbs">
+              <div><dt>Problem</dt><dd>Generic training advice ignores the workouts you&rsquo;ve actually done, and that data sits scattered across fitness apps.</dd></div>
+              <div><dt>Built</dt><dd>A Telegram bot that syncs Strava activities through OAuth2 into Supabase, then answers free-text questions with Claude using recent training as context, so the coaching is grounded in real data. Dockerised and deployed on Render.</dd></div>
+              <div><dt>Stack</dt><dd><ul class="tags"><li>Claude API</li><li>Supabase</li><li>Strava OAuth2</li><li>TypeScript</li><li>Docker</li><li>Render</li></ul></dd></div>
+            </dl>
+            <div class="project-links"><a class="btn btn-sm btn-primary" href="/work/fitflow/">Case study<span class="visually-hidden">: FitFlow</span></a><a class="btn btn-sm" href="https://github.com/doniyor-py/fitness-telegrambot">GitHub<span class="visually-hidden">: FitFlow</span></a><span class="todo">[TODO: live bot link (t.me/…)]</span></div>
+          </article>
+          <article class="card project" id="london-blue-plaques">
+            <div class="project-top">
+              <h3>London Blue Plaques Explorer</h3>
+              <span class="badge badge-accent">In progress</span>
+            </div>
+            <p class="project-summary">A REST API for exploring London&rsquo;s blue plaques, built on Open Plaques data.</p>
+            <dl class="pbs">
+              <div><dt>Problem</dt><dd><span class="todo">[TODO: the problem it solves]</span></dd></div>
+              <div><dt>Built</dt><dd>A Flask + MongoDB REST API over the Open Plaques dataset. <span class="todo">[TODO: current endpoints / what works so far]</span></dd></div>
+              <div><dt>Stack</dt><dd><ul class="tags"><li>Python</li><li>Flask</li><li>MongoDB</li><li>Open Plaques data</li></ul></dd></div>
+            </dl>
+            <div class="project-links"><span class="todo">[TODO: GitHub repo URL]</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wrap" aria-labelledby="data-title">
+        <h2 id="data-title">Earlier data work</h2>
+        <p class="lede">Analysis projects from before I focused on backend engineering. They&rsquo;re where my SQL and data-modelling habits come from.</p>
+        <div class="grid grid-3">
+          <article class="card project">
+            <h3><a href="/work/apple-sql/">Apple global sales</a></h3>
+            <p class="project-summary">Schema to stored procedures: 11,500 transactions, 30 business questions, reusable views and five parameterised procedures.</p>
+            <p class="muted" style="font-family:var(--mono);font-size:.8rem">MySQL</p>
+          </article>
+          <article class="card project">
+            <h3><a href="/work/london-bikes/">London bike journeys</a></h3>
+            <p class="project-summary">Santander Cycles, August 2023: trip duration, station demand, and weekday double peaks vs weekend leisure curves.</p>
+            <p class="muted" style="font-family:var(--mono);font-size:.8rem">R · R Markdown · ggplot2</p>
+          </article>
+          <article class="card project">
+            <h3><a href="/work/premier-league/">Premier League performance</a></h3>
+            <p class="project-summary">Three seasons merged into a league table built from scratch, home advantage, and a 15+ chart library.</p>
+            <p class="muted" style="font-family:var(--mono);font-size:.8rem">Python · Pandas · Jupyter</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p class="muted" style="margin:0">&copy; 2026 Doniyor Mekhmonov · London</p>
+        <ul class="footer-links">
+          <li><a href="https://github.com/doniyor-py" rel="me noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/doniyormekhmonov-a50b64329" rel="me noopener">LinkedIn</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/docs/Doniyor_Mekhmonov_CV.pdf" download>CV (PDF)</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
