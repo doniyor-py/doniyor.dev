@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#0ea5e9" />
-  <rect x="7" y="14" width="5" height="12" rx="1" fill="#ffffff" />
-  <rect x="14" y="10" width="5" height="16" rx="1" fill="#ffffff" />
-  <rect x="21" y="7" width="5" height="19" rx="1" fill="#ffffff" />
+  <rect width="32" height="32" rx="8" fill="#151312" />
+  <text x="7" y="23" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#ede8e3">d</text>
+  <circle cx="24" cy="21.5" r="2.6" fill="#f0a35e" />
 </svg>

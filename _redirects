@@ -1,0 +1,10 @@
+# Old single-page URLs -> new multi-page structure
+/project-finoks.html               /work/finops-agent/    301
+/project-fitness-telegrambot.html  /work/fitflow/         301
+/project-apple-sql.html            /work/apple-sql/       301
+/project-london-bikes.html         /work/london-bikes/    301
+/project-premier-league.html       /work/premier-league/  301
+/assets/profile.png                /assets/img/profile-600.webp  301
+
+# CV source is for editing only; never serve it (it contains a plain mailto)
+/docs/cv-source.html               /404.html              404!

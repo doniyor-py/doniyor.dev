@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Work · Doniyor Mekhmonov</title>
+    <meta name="description" content="Projects by Doniyor Mekhmonov: FinOps Agent, PR Assistant API, FitFlow and London Blue Plaques Explorer, built with FastAPI, the Claude API, Flask and MongoDB." />
+    <link rel="canonical" href="https://doniyor.dev/work/" />
+    <meta name="theme-color" content="#151312" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Doniyor Mekhmonov" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content="Work · Doniyor Mekhmonov" />
+    <meta property="og:description" content="Projects by Doniyor Mekhmonov: FinOps Agent, PR Assistant API, FitFlow and London Blue Plaques Explorer, built with FastAPI, the Claude API, Flask and MongoDB." />
+    <meta property="og:url" content="https://doniyor.dev/work/" />
+    <meta property="og:image" content="https://doniyor.dev/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Doniyor Mekhmonov, Backend Engineer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Work · Doniyor Mekhmonov" />
+    <meta name="twitter:description" content="Projects by Doniyor Mekhmonov: FinOps Agent, PR Assistant API, FitFlow and London Blue Plaques Explorer, built with FastAPI, the Claude API, Flask and MongoDB." />
+    <meta name="twitter:image" content="https://doniyor.dev/assets/og.png" />
+    <link rel="preload" href="/assets/fonts/geist-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap nav-bar">
+        <a class="brand" href="/">Doniyor Mekhmonov<span>.</span></a>
+        <nav aria-label="Main">
+          <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/work/" aria-current="page">Work</a></li>
+          <li><a href="/experience/">Experience</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="wrap page-head" aria-labelledby="work-title">
+        <p class="eyebrow">Work</p>
+        <h1 id="work-title">Projects</h1>
+        <p class="lede">Backends and agents I&rsquo;ve built, strongest first. Every card follows the same order: problem, what I built, stack, links.</p>
+      </section>
+
+      <section class="wrap" aria-labelledby="main-projects-title">
+        <h2 id="main-projects-title" class="visually-hidden">Main projects</h2>
+        <div class="grid grid-2">
+          <article class="card project" id="finops-agent">
+            <div class="project-top">
+              <h3><a href="/work/finops-agent/">FinOps Agent</a></h3>
+              <span class="badge badge-accent">Hackathon</span>
+            </div>
+            <p class="project-summary">Autonomous accounts-receivable agent with a three-tier autonomy gate.</p>
+            <p class="project-meta">Built at Cursor Hack London · 30 Apr 2026</p>
+            <dl class="pbs">
+              <div><dt>Problem</dt><dd>Small UK businesses lose time and cash chasing late invoices, and letting an LLM act freely on financial decisions isn&rsquo;t safe.</dd></div>
+              <div><dt>Built</dt><dd><ul><li>A FastAPI agent that chases overdue invoices, screens counterparties for AML risk and applies UK Late Payment Act interest.</li><li>Every action passes a three-tier autonomy gate (<code>AUTO</code> / <code>ESCALATE</code> / <code>HARD_BLOCK</code>).</li><li>Claude drafts the emails; the activity feed streams live over WebSockets behind JWT + bcrypt auth.</li></ul></dd></div>
+              <div><dt>Stack</dt><dd><ul class="tags"><li>FastAPI</li><li>Claude API</li><li>JWT</li><li>bcrypt</li><li>WebSockets</li><li>SQLite</li><li>React</li></ul></dd></div>
+            </dl>
+            <div class="project-links"><a class="btn btn-sm btn-primary" href="/work/finops-agent/">Case study<span class="visually-hidden">: FinOps Agent</span></a><a class="btn btn-sm" href="https://github.com/doniyor-py/Finoks">GitHub<span class="visually-hidden">: FinOps Agent</span></a></div>
+          </article>
+          <article class="card project" id="pr-assistant-api">
+            <div class="project-top">
+              <h3>PR Assistant API</h3>
+              <span class="badge">In progress</span>
+            </div>
+            <p class="project-summary">Async code-review API: submit a GitHub PR or raw diff, get back structured findings (line, severity, issue, fix).</p>
+            
+            <dl class="pbs">
+              <div><dt>Problem</dt><dd>An AI first-pass review only helps if its output is structured and the API never blocks while the model runs.</dd></div>
+              <div><dt>Built</dt><dd><ul><li>FastAPI service with a typed Pydantic contract, the 202-Accepted async job pattern, input validation and a 7-test pytest suite.</li><li>Claude review worker and Redis queue in progress.</li></ul></dd></div>
+              <div><dt>Stack</dt><dd><ul class="tags"><li>FastAPI</li><li>Pydantic</li><li>pytest</li><li class="wip">Claude API<span>in progress</span></li><li class="wip">Redis<span>in progress</span></li></ul></dd></div>
+            </dl>
+            <div class="project-links"><p class="no-links">No public repo yet.</p></div>
+          </article>
+          <article class="card project" id="fitflow">
+            <div class="project-top">
+              <h3><a href="/work/fitflow/">FitFlow</a></h3>
+              <span class="badge">Deployed</span>
+            </div>
+            <p class="project-summary">AI fitness-coaching bot on Telegram, grounded in your Strava data.</p>
+            
+            <dl class="pbs">
+              <div><dt>Problem</dt><dd>Generic training advice ignores the workouts you&rsquo;ve actually done, and that data sits scattered across fitness apps.</dd></div>
+              <div><dt>Built</dt><dd><ul><li>A Telegram bot that syncs Strava activities through OAuth2 into Supabase.</li><li>Free-text questions go to Claude with recent training as context, so coaching is grounded in real data.</li><li>Dockerised and deployed on Render.</li></ul></dd></div>
+              <div><dt>Stack</dt><dd><ul class="tags"><li>Claude API</li><li>Supabase</li><li>Strava OAuth2</li><li>TypeScript</li><li>Docker</li><li>Render</li></ul></dd></div>
+            </dl>
+            <div class="project-links"><a class="btn btn-sm btn-primary" href="https://github.com/doniyor-py/fitness-telegrambot">GitHub<span class="visually-hidden">: FitFlow</span></a></div>
+          </article>
+          <article class="card project" id="london-blue-plaques">
+            <div class="project-top">
+              <h3>London Blue Plaques Explorer</h3>
+              <span class="badge badge-accent">In progress</span>
+            </div>
+            <p class="project-summary">A REST API for exploring London&rsquo;s blue plaques, built on Open Plaques data.</p>
+            
+            <dl class="pbs">
+              <div><dt>Problem</dt><dd>Open Plaques data is one flat list, so questions like &lsquo;which London areas have the most plaques for scientists?&rsquo; are hard to answer.</dd></div>
+              <div><dt>Built</dt><dd><ul><li>A Flask + MongoDB REST API over the Open Plaques dataset, modelling each plaque as a nested document (subjects, location, categories).</li><li>In progress: search and filter endpoints, and aggregation endpoints that compute counts and averages per area and category with MongoDB&rsquo;s aggregation pipeline.</li></ul></dd></div>
+              <div><dt>Stack</dt><dd><ul class="tags"><li>Python</li><li>Flask</li><li>MongoDB</li><li>Aggregation pipeline</li><li>Open Plaques data</li></ul></dd></div>
+            </dl>
+            <div class="project-links"><p class="no-links">No public repo yet.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wrap" aria-labelledby="data-title">
+        <div class="section-head">
+          <p class="eyebrow">Earlier data work</p>
+          <h2 id="data-title">Analysis projects</h2>
+          <p class="section-sub">From before I focused on backend engineering; where my SQL and data-modelling habits come from.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card project">
+            <h3><a href="/work/apple-sql/">Apple global sales</a></h3>
+            <p class="muted">Schema to stored procedures: 11,500 transactions, 30 business questions, reusable views and five parameterised procedures.</p>
+            <p class="muted" style="font-family:var(--mono);font-size:.85rem;margin:0">MySQL</p>
+          </article>
+          <article class="card project">
+            <h3><a href="/work/london-bikes/">London bike journeys</a></h3>
+            <p class="muted">Santander Cycles, August 2023: trip duration, station demand, and weekday double peaks vs weekend leisure curves.</p>
+            <p class="muted" style="font-family:var(--mono);font-size:.85rem;margin:0">R · R Markdown · ggplot2</p>
+          </article>
+          <article class="card project">
+            <h3><a href="/work/premier-league/">Premier League performance</a></h3>
+            <p class="muted">Three seasons merged into a league table built from scratch, home advantage, and a 15+ chart library.</p>
+            <p class="muted" style="font-family:var(--mono);font-size:.85rem;margin:0">Python · Pandas · Jupyter</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="wrap">
+        <p class="eyebrow">Let&rsquo;s talk</p>
+        <h2 id="cta-title">Hiring for a backend role?</h2>
+        <p>Graduate &amp; junior roles from June 2027, part-time roles now.</p>
+        <a class="btn btn-primary btn-lg" href="/contact/">Get in touch</a>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>&copy; 2026 Doniyor Mekhmonov · London</p>
+        <div class="footer-right">
+          <ul class="footer-links">
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/docs/Doniyor_Mekhmonov_CV.pdf" download>CV (PDF)</a></li>
+          </ul>
+          <ul class="social" aria-label="Social links"><li><a href="https://github.com/doniyor-py" rel="me noopener" aria-label="GitHub profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57l-.02-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.840 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.31-5.47-1.34-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.290-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.37.81 1.1.81 2.22l-.01 3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></svg></a></li><li><a href="https://www.linkedin.com/in/doniyor-mekhmonov-a50b64329" rel="me noopener" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.640-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.56V9h3.56v11.45Z"/></svg></a></li><li><a href="https://www.instagram.com/doniyor.ysg/" rel="me noopener" aria-label="Instagram profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></a></li><li><a href="https://t.me/doniyormxn" rel="me noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.94 4.6 18.9 19.02c-.23 1.02-.83 1.27-1.69.79l-4.66-3.43-2.25 2.16c-.25.25-.46.46-.94.46l.33-4.74 8.63-7.8c.38-.33-.08-.52-.58-.19L7.07 12.98l-4.6-1.44c-1-.31-1.02-1 .21-1.48l17.98-6.930c.83-.31 1.56.19 1.28 1.47Z"/></svg></a></li></ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

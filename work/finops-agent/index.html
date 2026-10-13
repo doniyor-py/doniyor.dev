@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FinOps Agent · Doniyor Mekhmonov</title>
+    <meta name="description" content="FinOps Agent: an autonomous accounts-receivable agent for UK SMEs with a three-tier autonomy gate, built at Cursor Hack London with FastAPI and the Claude API." />
+    <link rel="canonical" href="https://doniyor.dev/work/finops-agent/" />
+    <meta name="theme-color" content="#151312" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Doniyor Mekhmonov" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content="FinOps Agent · Doniyor Mekhmonov" />
+    <meta property="og:description" content="FinOps Agent: an autonomous accounts-receivable agent for UK SMEs with a three-tier autonomy gate, built at Cursor Hack London with FastAPI and the Claude API." />
+    <meta property="og:url" content="https://doniyor.dev/work/finops-agent/" />
+    <meta property="og:image" content="https://doniyor.dev/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Doniyor Mekhmonov, Backend Engineer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FinOps Agent · Doniyor Mekhmonov" />
+    <meta name="twitter:description" content="FinOps Agent: an autonomous accounts-receivable agent for UK SMEs with a three-tier autonomy gate, built at Cursor Hack London with FastAPI and the Claude API." />
+    <meta name="twitter:image" content="https://doniyor.dev/assets/og.png" />
+    <link rel="preload" href="/assets/fonts/geist-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap nav-bar">
+        <a class="brand" href="/">Doniyor Mekhmonov<span>.</span></a>
+        <nav aria-label="Main">
+          <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/work/" aria-current="page">Work</a></li>
+          <li><a href="/experience/">Experience</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <article class="wrap page-head prose">
+        <a class="back-link" href="/work/">&larr; All work</a>
+        <p class="eyebrow">Case study</p>
+        <h1>FinOps Agent</h1>
+        <p class="muted">Built at Cursor Hack London &middot; 30 Apr 2026</p>
+        <ul class="tags"><li>FastAPI</li><li>Claude API</li><li>JWT</li><li>bcrypt</li><li>WebSockets</li><li>SQLAlchemy 2</li><li>SQLite</li><li>APScheduler</li><li>React</li><li>Vite</li></ul>
+        <div style="margin-top:2rem">
+          <p><strong>FinOps Agent</strong> (repo name: Finoks) treats receivables as a guarded workflow rather than a single prompt. It chases late invoices, screens counterparties for AML risk and applies UK Late Payment Act statutory interest.</p>
+          <p>Overdue invoices progress through deterministic rules, counterparty enrichment and a <strong>three-tier autonomy gate</strong> (<code>AUTO</code> / <code>ESCALATE</code> / <code>HARD_BLOCK</code>), so risky actions never go out without escalation.</p>
+          <h2>How it works</h2>
+          <ul>
+            <li>FastAPI backend with JWT auth and bcrypt-hashed passwords; scheduled runs via APScheduler.</li>
+            <li>Claude drafts chaser emails, with template fallbacks when no API key is set.</li>
+            <li>The agent&rsquo;s activity feed streams to a React UI over a WebSocket.</li>
+            <li>Seeded demo invoices exercise every branch of the autonomy gate.</li>
+          </ul>
+          <h2>Compliance framing</h2>
+          <p>The backend sets compliance context (POCA 2002, MLR 2017, FCA FCG, NCA typologies and the Late Payment of Commercial Debts (Interest) Act 1998) beside the mechanics, so every decision the agent makes can be traced to a rule.</p>
+        </div>
+        <div class="btn-row" style="margin-top:2rem">
+          <a class="btn btn-primary" href="https://github.com/doniyor-py/Finoks">View repository on GitHub</a>
+          <a class="btn" href="/work/">Back to all work</a>
+        </div>
+      </article>
+    </main>
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="wrap">
+        <p class="eyebrow">Let&rsquo;s talk</p>
+        <h2 id="cta-title">Hiring for a backend role?</h2>
+        <p>Graduate &amp; junior roles from June 2027, part-time roles now.</p>
+        <a class="btn btn-primary btn-lg" href="/contact/">Get in touch</a>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>&copy; 2026 Doniyor Mekhmonov · London</p>
+        <div class="footer-right">
+          <ul class="footer-links">
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/docs/Doniyor_Mekhmonov_CV.pdf" download>CV (PDF)</a></li>
+          </ul>
+          <ul class="social" aria-label="Social links"><li><a href="https://github.com/doniyor-py" rel="me noopener" aria-label="GitHub profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57l-.02-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.840 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.31-5.47-1.34-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.290-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.37.81 1.1.81 2.22l-.01 3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></svg></a></li><li><a href="https://www.linkedin.com/in/doniyor-mekhmonov-a50b64329" rel="me noopener" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.640-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.56V9h3.56v11.45Z"/></svg></a></li><li><a href="https://www.instagram.com/doniyor.ysg/" rel="me noopener" aria-label="Instagram profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></a></li><li><a href="https://t.me/doniyormxn" rel="me noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.94 4.6 18.9 19.02c-.23 1.02-.83 1.27-1.69.79l-4.66-3.43-2.25 2.16c-.25.25-.46.46-.94.46l.33-4.74 8.63-7.8c.38-.33-.08-.52-.58-.19L7.07 12.98l-4.6-1.44c-1-.31-1.02-1 .21-1.48l17.98-6.930c.83-.31 1.56.19 1.28 1.47Z"/></svg></a></li></ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
