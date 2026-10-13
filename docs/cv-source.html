@@ -1,0 +1,224 @@
+<!doctype html>
+<!-- Source for docs/Doniyor_Mekhmonov_CV.pdf. Edit here, then print to A4 PDF (headless Chrome).
+     Never add a phone number to this file. -->
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Doniyor Mekhmonov - CV</title>
+    <style>
+      @font-face {
+        font-family: "Geist";
+        src: url("/assets/fonts/geist-latin-var.woff2") format("woff2");
+        font-weight: 100 900;
+      }
+      @page {
+        size: A4;
+        margin: 11mm 14mm;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Geist", Arial, sans-serif;
+        font-size: 9.2pt;
+        line-height: 1.36;
+        color: #1b1917;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 21pt;
+        letter-spacing: -0.02em;
+        margin: 0;
+        font-weight: 700;
+      }
+      .role {
+        font-size: 11pt;
+        color: #b25f12;
+        font-weight: 600;
+        margin: 1pt 0 4pt;
+      }
+      .contact {
+        color: #4a4541;
+        font-size: 8.9pt;
+      }
+      .contact span + span::before {
+        content: " · ";
+        color: #a39d96;
+      }
+      h2 {
+        font-size: 9pt;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #b25f12;
+        border-bottom: 1px solid #e3ddd6;
+        padding-bottom: 2pt;
+        margin: 8pt 0 4pt;
+      }
+      p {
+        margin: 0 0 3pt;
+      }
+      ul {
+        margin: 1pt 0 0;
+        padding-left: 12pt;
+      }
+      li {
+        margin-bottom: 1.5pt;
+      }
+      .entry {
+        margin-bottom: 4.5pt;
+        break-inside: avoid;
+      }
+      .entry-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 10pt;
+        font-weight: 600;
+      }
+      .entry-head .when {
+        font-weight: 400;
+        color: #4a4541;
+        white-space: nowrap;
+      }
+      .stack {
+        color: #4a4541;
+        font-weight: 400;
+      }
+      .skills {
+        display: grid;
+        grid-template-columns: 26mm 1fr;
+        gap: 1.5pt 8pt;
+      }
+      .skills dt {
+        font-weight: 600;
+      }
+      .skills dd {
+        margin: 0;
+      }
+      .cols {
+        display: grid;
+        grid-template-columns: 1.35fr 1fr;
+        gap: 0 14pt;
+      }
+      .muted {
+        color: #4a4541;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Doniyor Mekhmonov</h1>
+      <p class="role">Backend Engineer (AI-native) · London</p>
+      <p class="contact">
+        <span><a href="mailto:doniyormekhmon@gmail.com">doniyormekhmon@gmail.com</a></span><span><a href="https://doniyor.dev">doniyor.dev</a></span><span><a href="https://github.com/doniyor-py">github.com/doniyor-py</a></span><span><a href="https://www.linkedin.com/in/doniyormekhmonov-a50b64329">linkedin.com/in/doniyormekhmonov-a50b64329</a></span><span><a href="https://t.me/doniyormxn">t.me/doniyormxn</a></span>
+      </p>
+    </header>
+
+    <h2>Profile</h2>
+    <p>
+      Final-year BSc Computing Systems student at Ulster University London (predicted First Class, graduating May
+      2027), building AI-native backends: APIs and agents with Python, FastAPI and the Claude API, shipped with
+      Redis and Docker. I treat the LLM as one guarded component of the system, not the whole product. Open to
+      graduate and junior backend roles from June 2027, and part-time roles now.
+    </p>
+
+    <h2>Technical skills</h2>
+    <dl class="skills">
+      <dt>Languages</dt>
+      <dd>Python, TypeScript, SQL, R</dd>
+      <dt>Backend</dt>
+      <dd>FastAPI, Flask, Node.js, REST APIs, WebSockets, JWT &amp; bcrypt auth, OAuth2, pytest</dd>
+      <dt>Databases</dt>
+      <dd>PostgreSQL (Supabase), Redis, MongoDB, SQLite, MySQL</dd>
+      <dt>AI</dt>
+      <dd>Claude API, tool use &amp; agent loops, prompt design &amp; guardrails, Claude Code</dd>
+      <dt>DevOps &amp; tools</dt>
+      <dd>Docker, Render, Git &amp; GitHub, Jupyter &amp; Pandas, Power BI</dd>
+    </dl>
+
+    <h2>Projects</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span>FinOps Agent <span class="stack">| FastAPI · Claude API · JWT · bcrypt · WebSockets</span></span>
+        <span class="when">London fintech hackathon</span>
+      </div>
+      <ul>
+        <li>Autonomous accounts-receivable agent for UK SMEs: chases overdue invoices, screens counterparties for AML risk and applies UK Late Payment Act statutory interest.</li>
+        <li>Designed a three-tier autonomy gate (AUTO / ESCALATE / HARD_BLOCK) so the LLM acts on its own only where it is safe to, and escalates or is blocked otherwise.</li>
+        <li>Claude drafts chaser emails with template fallbacks; the agent's activity streams live to a React UI over WebSockets behind JWT + bcrypt auth.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <span>PR Assistant API <span class="stack">| FastAPI · Redis · Claude API · pytest · Docker</span></span>
+      </div>
+      <ul>
+        <li>FastAPI service backed by Redis and the Claude API, tested with pytest and packaged with Docker.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <span>FitFlow <span class="stack">| Claude API · Supabase · Strava OAuth2 · Docker · Render</span></span>
+      </div>
+      <ul>
+        <li>AI fitness-coaching Telegram bot: syncs Strava activities through OAuth2 into Supabase and answers free-text questions with Claude, using recent training as context.</li>
+        <li>Encrypted credential storage, Supabase migrations and webhook handling; Dockerised and deployed on Render.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <span>London Blue Plaques Explorer <span class="stack">| Python · Flask · MongoDB</span></span>
+        <span class="when">In progress</span>
+      </div>
+      <ul>
+        <li>REST API built with Flask and MongoDB on Open Plaques data, for exploring London's blue plaques.</li>
+      </ul>
+    </div>
+
+    <h2>Experience</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span>Student Representative <span class="stack">| Ulster University London</span></span>
+        <span class="when">Sep 2024 – Present</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <span>Hospitality <span class="stack">| Aqua Shard, London · part-time (~20 hrs/week)</span></span>
+        <span class="when">Jun 2025 – Present</span>
+      </div>
+      <ul>
+        <li>High-standard guest service in a fine-dining, high-expectation environment, balanced with full-time study.</li>
+        <li>Composure, precision and clear communication under pressure.</li>
+      </ul>
+    </div>
+
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span>Ulster University London <span class="stack">| BSc Computing Systems</span></span>
+        <span class="when">Sep 2024 – May 2027</span>
+      </div>
+      <p>Predicted classification: First Class · Dean's List for academic excellence (2024–2025)</p>
+      <p class="muted">Key modules: Databases, Statistics, Machine Learning, Algorithms, Software Engineering</p>
+    </div>
+
+    <div class="cols">
+      <div>
+        <h2>Certifications</h2>
+        <p><strong>Anthropic</strong> · Claude Code 101 (Jun 2026)</p>
+        <p><strong>DataCamp</strong> · Python Data Fundamentals · Applying SQL to Real-World Problems · Analyzing and Visualizing Data with Power BI</p>
+      </div>
+      <div>
+        <h2>Languages</h2>
+        <p>Uzbek (native) · Russian (fluent) · English (C1)</p>
+      </div>
+    </div>
+
+    <p class="muted" style="margin-top: 10pt">References available on request.</p>
+  </body>
+</html>

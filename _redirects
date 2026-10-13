@@ -5,3 +5,6 @@
 /project-london-bikes.html         /work/london-bikes/    301
 /project-premier-league.html       /work/premier-league/  301
 /assets/profile.png                /assets/img/profile-600.webp  301
+
+# CV source is for editing only; never serve it (it contains a plain mailto)
+/docs/cv-source.html               /404.html              404!
