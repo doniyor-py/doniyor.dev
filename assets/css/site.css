@@ -245,8 +245,7 @@ ul {
   transition: background-color 300ms ease, border-color 300ms ease;
 }
 
-.site-header.is-scrolled,
-.site-header.is-open {
+.site-header.is-scrolled {
   background: var(--header-bg);
   border-bottom-color: var(--border);
 }
@@ -346,58 +345,28 @@ ul {
   display: block;
 }
 
-.nav-toggle .i-close,
-.is-open .nav-toggle .i-menu {
-  display: none;
-}
-
-.is-open .nav-toggle .i-close {
-  display: block;
-}
-
+/* Three links fit inline even on small phones; they wrap below ~340px. */
 @media (max-width: 47.99rem) {
   .nav-bar {
     flex-wrap: wrap;
     gap: 0.5rem 0.75rem;
   }
-
-  /* Without JS the links simply wrap under the brand. */
-  html:not(.js) .site-header {
-    position: absolute;
+  .nav-list {
+    gap: 0 1.25rem;
   }
-  html:not(.js) .site-header nav {
+}
+
+/* Smallest phones: brand + toggle on row one, links on their own row. */
+@media (max-width: 22.49rem) {
+  .site-header nav {
     order: 3;
     width: 100%;
   }
-  html:not(.js) .nav-list {
-    gap: 0 1.25rem;
+  .pill {
+    border-radius: 12px;
   }
-
-  .js .nav-toggle {
-    display: grid;
-  }
-  .js .site-header nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    display: none;
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
-  }
-  .js .is-open nav {
-    display: block;
-  }
-  .js .nav-list {
-    flex-direction: column;
-    padding: 0.5rem var(--gutter) 1rem;
-    max-width: var(--wrap);
-    margin-inline: auto;
-  }
-  .js .nav-list a {
-    min-height: 48px;
-    width: 100%;
-    font-size: 1rem;
+  .hero {
+    padding-top: 9rem;
   }
 }
 
@@ -1097,7 +1066,6 @@ main {
   inset: 0;
 }
 
-.pcard:hover h3,
 .pcard:hover h3 a {
   color: var(--accent-text);
 }
@@ -1118,6 +1086,11 @@ main {
 
 .dateline {
   margin-bottom: 0.5rem;
+}
+
+time,
+.nowrap {
+  white-space: nowrap;
 }
 
 .mono-tags {
@@ -1351,6 +1324,11 @@ main {
 
 .prose li + li {
   margin-top: 0.4rem;
+}
+
+.prose .chips li {
+  margin-top: 0;
+  color: var(--text-2);
 }
 
 .prose h2 {

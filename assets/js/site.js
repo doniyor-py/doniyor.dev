@@ -19,18 +19,6 @@
     label();
   });
 
-  // Mobile menu.
-  var navBtn = document.querySelector(".nav-toggle");
-  function setOpen(open) {
-    header.classList.toggle("is-open", open);
-    navBtn.setAttribute("aria-expanded", open);
-    navBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-  }
-  if (navBtn) {
-    navBtn.addEventListener("click", function () { setOpen(!header.classList.contains("is-open")); });
-    document.addEventListener("keydown", function (e) { if (e.key === "Escape") setOpen(false); });
-  }
-
   // Header background + scroll progress bar.
   var ticking = false;
   function onScroll() {
