@@ -6,5 +6,13 @@
 /project-premier-league.html       /work/premier-league/  301
 /assets/profile.png                /assets/img/profile-600.webp  301
 
+# Pages folded into the home page
+/about                             /    301
+/about/                            /    301
+/experience                        /    301
+/experience/                       /    301
+/notes                             /    301
+/notes/                            /    301
+
 # CV source is for editing only; never serve it (it contains a plain mailto)
 /docs/cv-source.html               /404.html              404!

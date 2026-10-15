@@ -38,9 +38,7 @@
         <nav aria-label="Main">
           <ul class="nav-list" id="nav-list">
             <li><a href="/" aria-current="page">Home</a></li>
-            <li><a href="/about/">About</a></li>
             <li><a href="/work/">Work</a></li>
-            <li><a href="/experience/">Experience</a></li>
             <li><a href="/contact/">Contact</a></li>
           </ul>
         </nav>
@@ -51,33 +49,39 @@
     <main id="main">
       <section class="hero grid-bg" aria-labelledby="hero-title">
         <div class="wrap hero-inner">
-          <div class="hero-rail">
-            <a class="rail-avatar" href="/about/" aria-label="About Doniyor">
-              <picture>
-                <source type="image/avif" srcset="/assets/img/avatar-144.avif 144w" sizes="56px" />
-                <img src="/assets/img/avatar-144.webp" alt="" width="56" height="56" loading="lazy" decoding="async" />
-              </picture>
-            </a>
-            <span class="rail-name" aria-hidden="true">doniyor.dev</span>
-            <span class="rail-line" aria-hidden="true"></span>
-            <ul class="rail-social"><li><a href="https://github.com/doniyor-py" rel="me noopener" aria-label="GitHub profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li><li><a href="https://www.linkedin.com/in/doniyor-mekhmonov-a50b64329" rel="me noopener" aria-label="LinkedIn profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li><li><a href="https://www.instagram.com/doniyor.ysg/" rel="me noopener" aria-label="Instagram profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a></li><li><a href="https://t.me/doniyormxn" rel="me noopener" aria-label="Telegram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg></a></li></ul>
+          <div class="hero-photo">
+            <picture>
+              <source type="image/avif" srcset="/assets/img/avatar-144.avif 144w, /assets/img/avatar-560.avif 560w" sizes="(min-width: 64rem) 320px, 144px" />
+              <img src="/assets/img/avatar-560.webp" srcset="/assets/img/avatar-144.webp 144w, /assets/img/avatar-560.webp 560w" sizes="(min-width: 64rem) 320px, 144px" alt="Doniyor Mekhmonov" width="320" height="320" fetchpriority="high" />
+            </picture>
           </div>
 
           <div class="hero-main">
             <p class="pill"><span class="pulse-dot" aria-hidden="true"></span>Open to graduate roles · June 2027</p>
-            <p class="hero-hi">Hi, I&rsquo;m <strong>Doniyor Mekhmonov</strong> &mdash;</p>
+            <p class="hero-hi">Hi, I&rsquo;m <strong>Doniyor</strong> &mdash;</p>
             <h1 id="hero-title"><span class="h1-a">Backend</span> <span class="h1-b">Engineer.</span></h1>
             <p class="hero-intro">I build <strong>AI-native backends</strong>: APIs and agents with Python, FastAPI and the Claude API.</p>
             <div class="btn-row">
               <a class="btn btn-primary" href="/work/">View my work <span aria-hidden="true">&rarr;</span></a>
               <a class="btn" href="/docs/Doniyor_Mekhmonov_CV.pdf" download>Download CV</a>
             </div>
+            <ul class="social hero-social"><li><a href="https://github.com/doniyor-py" rel="me noopener" aria-label="GitHub profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li><li><a href="https://www.linkedin.com/in/doniyor-mekhmonov-a50b64329" rel="me noopener" aria-label="LinkedIn profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li><li><a href="https://www.instagram.com/doniyor.ysg/" rel="me noopener" aria-label="Instagram profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a></li><li><a href="https://t.me/doniyormxn" rel="me noopener" aria-label="Telegram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg></a></li></ul>
             <dl class="stats">
               <div class="stat"><dt>projects built on the Claude API</dt><dd>2</dd></div>
               <div class="stat"><dt>certifications</dt><dd>4</dd></div>
             </dl>
           </div>
+        </div>
+        <a class="hero-scroll" href="#about-me" aria-label="Scroll to About me"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></a>
+      </section>
 
+      <section class="section wrap" id="about-me" aria-labelledby="about-title">
+        <div class="section-head">
+          <p class="eyebrow">About me</p>
+          <h2 id="about-title">A bit about me</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-copy">I&rsquo;m a final-year BSc Computing Systems student at Ulster University London, graduating in May 2027 with a predicted First and a place on the Dean&rsquo;s List (2024&ndash;25). I build backend APIs and AI agents in Python, with FastAPI, Flask, MongoDB and the Claude API, and I care about clear API contracts, tests and guardrails around what a model is allowed to do. I&rsquo;m also my cohort&rsquo;s Student Representative, and I speak Uzbek, Russian and English.</p>
           <aside class="hire-card" aria-labelledby="hire-title">
             <p class="hire-status">Available</p>
             <p class="hire-kicker">Open to work</p>
@@ -90,44 +94,38 @@
             <a class="btn btn-outline-accent" href="/docs/Doniyor_Mekhmonov_CV.pdf" download><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg>Download CV</a>
           </aside>
         </div>
-        <a class="hero-scroll" href="#work" aria-label="Scroll to selected work"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></a>
       </section>
 
-      <section class="section wrap" id="work" aria-labelledby="work-title">
-        <div class="section-head section-head-row">
-          <div>
-            <p class="eyebrow">Selected work</p>
-            <h2 id="work-title">Things I&rsquo;ve built</h2>
-            <p class="section-sub">Backends and agents, strongest first.</p>
-          </div>
-          <a class="more-link" href="/work/">All projects <span aria-hidden="true">&rarr;</span></a>
+      <section class="section wrap" id="work" aria-labelledby="work-title" style="padding-top:0">
+        <div class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Things I&rsquo;ve built</h2>
+          <p class="section-sub">Backends and agents, strongest first.</p>
         </div>
-        <ul class="grid grid-2 plain-list" role="list">
+        <ul class="grid grid-3 plain-list" role="list">
           <li class="pcard">
-            <div class="pcard-top"><span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span></div>
-            <h3><a href="/work/#finops-agent">FinOps Agent</a></h3>
-            <p class="pcard-desc">Autonomous accounts-receivable agent with a three-tier autonomy gate.</p>
-            <p class="mono-tags">FastAPI · Claude API · JWT</p>
-          </li>
-          <li class="pcard">
-            <div class="pcard-top"><span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7M6 9v12"/></svg></span></div>
-            <h3><a href="/work/#pr-assistant-api">PR Assistant API</a></h3>
-            <p class="pcard-desc">Async code-review API: submit a GitHub PR or raw diff, get back structured findings (line, severity, issue, fix).</p>
-            <p class="mono-tags">FastAPI · Pydantic · pytest</p>
-          </li>
-          <li class="pcard">
-            <div class="pcard-top"><span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span></div>
-            <h3><a href="/work/#fitflow">FitFlow</a></h3>
-            <p class="pcard-desc">AI fitness-coaching bot on Telegram, grounded in your Strava data.</p>
-            <p class="mono-tags">Claude API · Supabase · Strava OAuth2</p>
-          </li>
-          <li class="pcard">
-            <div class="pcard-top"><span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span></div>
+            <div class="pcard-top"><span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span class="badge badge-wip">In progress</span></div>
             <h3><a href="/work/#london-blue-plaques">London Blue Plaques Explorer</a></h3>
-            <p class="pcard-desc">A REST API for exploring London&rsquo;s blue plaques, built on Open Plaques data.</p>
-            <p class="mono-tags">Python · Flask · MongoDB</p>
+            <p class="pcard-meta">Started <time datetime="2026-10-13">13 Oct 2026</time></p>
+            <p class="pcard-desc">Flask + MongoDB REST API with visit tracking and a &lsquo;nearby plaques&rsquo; geo search.</p>
+            <p class="mono-tags">Python · Flask · MongoDB · Geo queries</p>
+          </li>
+          <li class="pcard">
+            <div class="pcard-top"><span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span><span class="badge badge-accent">Hackathon</span></div>
+            <h3><a href="/work/#finops-agent">FinOps Agent</a></h3>
+            <p class="pcard-meta">Built at Cursor Hack London · <time datetime="2026-04-30">30 Apr 2026</time></p>
+            <p class="pcard-desc">Autonomous accounts-receivable agent with a three-tier autonomy gate.</p>
+            <p class="mono-tags">FastAPI · Claude API · JWT · bcrypt · WebSockets · SQLite · React</p>
+          </li>
+          <li class="pcard">
+            <div class="pcard-top"><span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span><span class="badge badge-accent">Deployed</span></div>
+            <h3><a href="/work/#fitflow">FitFlow</a></h3>
+            <p class="pcard-meta">Published <time datetime="2026-04-14">14 Apr 2026</time> · updated <time datetime="2026-05-06">6 May 2026</time> · deployed on Render</p>
+            <p class="pcard-desc">AI fitness-coaching bot on Telegram, grounded in your Strava and Garmin data.</p>
+            <p class="mono-tags">TypeScript · Claude API · Supabase · OAuth2 · Docker · Render</p>
           </li>
         </ul>
+        <p class="more-row"><a class="more-link" href="/work/">All projects <span aria-hidden="true">&rarr;</span></a></p>
       </section>
 
       <section class="section stack" aria-labelledby="stack-title" style="padding-top:0">
@@ -151,7 +149,7 @@
           <div class="stack-groups">
             <div>
               <h3 class="chip-label">Languages</h3>
-              <ul class="chips"><li>Python</li><li>TypeScript</li><li>SQL</li><li>R</li></ul>
+              <ul class="chips"><li>Python</li><li>TypeScript</li><li>Java</li><li>SQL</li><li>R</li></ul>
             </div>
             <div>
               <h3 class="chip-label">Backend</h3>
@@ -172,8 +170,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Latest writing: hidden until the first note is published on /notes/. -->
     </main>
     <footer class="site-footer">
       <div class="wrap">
@@ -185,7 +181,7 @@
           <a class="btn btn-primary" href="/contact/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Get in touch</a>
         </div>
         <div class="footer-row">
-          <nav aria-label="Footer"><ul class="footer-links"><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/work/">Work</a></li><li><a href="/experience/">Experience</a></li><li><a href="/contact/">Contact</a></li><li><a href="/docs/Doniyor_Mekhmonov_CV.pdf" download>CV (PDF)</a></li></ul></nav>
+          <nav aria-label="Footer"><ul class="footer-links"><li><a href="/contact/">Contact</a></li><li><a href="/docs/Doniyor_Mekhmonov_CV.pdf" download>CV (PDF)</a></li></ul></nav>
           <ul class="social"><li><a href="https://github.com/doniyor-py" rel="me noopener" aria-label="GitHub profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li><li><a href="https://www.linkedin.com/in/doniyor-mekhmonov-a50b64329" rel="me noopener" aria-label="LinkedIn profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li><li><a href="https://www.instagram.com/doniyor.ysg/" rel="me noopener" aria-label="Instagram profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a></li><li><a href="https://t.me/doniyormxn" rel="me noopener" aria-label="Telegram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg></a></li></ul>
         </div>
         <p class="copyright">&copy; 2026 Doniyor Mekhmonov · London</p>
