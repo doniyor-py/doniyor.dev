@@ -8,6 +8,7 @@
     <link rel="canonical" href="https://doniyor.dev/" />
     <meta name="theme-color" content="#151312" />
     <meta name="color-scheme" content="dark" />
+    <script>(function(d){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";d.dataset.theme=t;d.classList.add("js");document.querySelector('meta[name="color-scheme"]').content=t;document.querySelector('meta[name="theme-color"]').content=t==="light"?"#f5f5f0":"#151312"})(document.documentElement)</script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <meta property="og:type" content="website" />
@@ -31,150 +32,160 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
+      <div class="progress" aria-hidden="true"></div>
       <div class="wrap nav-bar">
-        <a class="brand" href="/">Doniyor Mekhmonov<span>.</span></a>
+        <a class="brand" href="/">doniyor.dev</a>
         <nav aria-label="Main">
           <ul class="nav-list">
-          <li><a href="/" aria-current="page">Home</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/work/">Work</a></li>
-          <li><a href="/experience/">Experience</a></li>
-          <li><a href="/contact/">Contact</a></li>
+            <li><a href="/" aria-current="page">Home</a></li>
+            <li><a href="/work/">Work</a></li>
+            <li><a href="/contact/">Contact</a></li>
           </ul>
         </nav>
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch theme"><svg class="icon i-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2M12 20.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M1.5 12h2M20.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg><svg class="icon i-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
       </div>
     </header>
     <main id="main">
-      <section class="wrap hero hero-grid" aria-labelledby="hero-title">
-        <div class="hero-avatar">
-          <picture>
-            <source type="image/avif" srcset="/assets/img/avatar-144.avif 144w, /assets/img/avatar-560.avif 560w" sizes="(max-width: 52rem) 72px, 280px" />
-            <img src="/assets/img/avatar-144.webp" srcset="/assets/img/avatar-144.webp 144w, /assets/img/avatar-560.webp 560w" sizes="(max-width: 52rem) 72px, 280px" alt="Doniyor Mekhmonov" width="280" height="280" fetchpriority="high" />
-          </picture>
-        </div>
-        <p class="hero-hi">Hi, I&rsquo;m Doniyor &mdash;</p>
-        <div class="hero-text">
-          <h1 id="hero-title">Backend Engineer<span class="dot">.</span></h1>
-          <p class="hero-intro">I build <strong>AI-native backends</strong>: APIs and agents with Python, FastAPI and the Claude API.</p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="/work/">View my work</a>
-            <a class="btn" href="/docs/Doniyor_Mekhmonov_CV.pdf" download>Download CV</a>
+      <section class="hero grid-bg" aria-labelledby="hero-title">
+        <div class="wrap hero-inner">
+          <div class="hero-photo">
+            <picture>
+              <source type="image/avif" srcset="/assets/img/avatar-144.avif 144w, /assets/img/avatar-560.avif 560w" sizes="(min-width: 64rem) 320px, 144px" />
+              <img src="/assets/img/avatar-560.webp" srcset="/assets/img/avatar-144.webp 144w, /assets/img/avatar-560.webp 560w" sizes="(min-width: 64rem) 320px, 144px" alt="Doniyor Mekhmonov" width="320" height="320" fetchpriority="high" />
+            </picture>
           </div>
-          <ul class="social" aria-label="Social links"><li><a href="https://github.com/doniyor-py" rel="me noopener" aria-label="GitHub profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57l-.02-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.840 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.31-5.47-1.34-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.290-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.37.81 1.1.81 2.22l-.01 3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></svg></a></li><li><a href="https://www.linkedin.com/in/doniyor-mekhmonov-a50b64329" rel="me noopener" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.640-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.56V9h3.56v11.45Z"/></svg></a></li><li><a href="https://www.instagram.com/doniyor.ysg/" rel="me noopener" aria-label="Instagram profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></a></li><li><a href="https://t.me/doniyormxn" rel="me noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.94 4.6 18.9 19.02c-.23 1.02-.83 1.27-1.69.79l-4.66-3.43-2.25 2.16c-.25.25-.46.46-.94.46l.33-4.74 8.63-7.8c.38-.33-.08-.52-.58-.19L7.07 12.98l-4.6-1.44c-1-.31-1.02-1 .21-1.48l17.98-6.930c.83-.31 1.56.19 1.28 1.47Z"/></svg></a></li></ul>
+
+          <div class="hero-main">
+            <p class="pill"><span class="pulse-dot" aria-hidden="true"></span><span>Open to graduate roles · <span class="nowrap">June 2027</span></span></p>
+            <p class="hero-hi">Hi, I&rsquo;m <strong>Doniyor</strong> &mdash;</p>
+            <h1 id="hero-title"><span class="h1-a">Backend</span> <span class="h1-b">Engineer.</span></h1>
+            <p class="hero-intro">I build <strong>AI-native backends</strong>: APIs and agents with Python, FastAPI and the Claude API.</p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="/work/">View my work <span aria-hidden="true">&rarr;</span></a>
+              <a class="btn" href="/docs/Doniyor_Mekhmonov_CV.pdf" download>Download CV</a>
+            </div>
+            <ul class="social hero-social"><li><a href="https://github.com/doniyor-py" rel="me noopener" aria-label="GitHub profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li><li><a href="https://www.linkedin.com/in/doniyor-mekhmonov-a50b64329" rel="me noopener" aria-label="LinkedIn profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li><li><a href="https://www.instagram.com/doniyor.ysg/" rel="me noopener" aria-label="Instagram profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a></li><li><a href="https://t.me/doniyormxn" rel="me noopener" aria-label="Telegram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg></a></li></ul>
+            <dl class="stats">
+              <div class="stat"><dt>projects built</dt><dd>4</dd></div>
+              <div class="stat"><dt>certifications</dt><dd>4</dd></div>
+            </dl>
+          </div>
         </div>
+        <a class="hero-scroll" href="#about-me" aria-label="Scroll to About me"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></a>
       </section>
 
-      <section class="wrap" aria-labelledby="hire-title">
-        <div class="glance">
-          <dl class="stats">
-            <div class="stat"><dt>projects built on the Claude API</dt><dd>2</dd></div>
-            <div class="stat"><dt>certifications</dt><dd>4</dd></div>
-          </dl>
-          <div class="card hire">
+      <section class="section wrap" id="about-me" aria-labelledby="about-title">
+        <div class="section-head">
+          <p class="eyebrow">About me</p>
+          <h2 id="about-title">A bit about me</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-copy">I&rsquo;m a final-year BSc Computing Systems student at Ulster University London, graduating in May 2027 with a predicted First and a place on the Dean&rsquo;s List (2024&ndash;25). I build backend APIs and AI agents in Python, with FastAPI, Flask, MongoDB and the Claude API, and I care about clear API contracts, tests and guardrails around what a model is allowed to do. I&rsquo;m also my cohort&rsquo;s Student Representative, and I speak Uzbek, Russian and English.</p>
+          <aside class="hire-card" aria-labelledby="hire-title">
             <p class="hire-status">Available</p>
-            <h2 id="hire-title">Hire me</h2>
-            <ul class="checklist">
+            <p class="hire-kicker">Open to work</p>
+            <h2 id="hire-title">Hire<br />me.</h2>
+            <ul class="dot-list">
               <li>Graduate &amp; junior backend roles from June 2027</li>
               <li>Part-time roles now</li>
               <li>Open-source collaboration</li>
             </ul>
-            <a class="btn btn-primary" href="/docs/Doniyor_Mekhmonov_CV.pdf" download>Download CV</a>
-          </div>
+            <a class="btn btn-outline-accent" href="/docs/Doniyor_Mekhmonov_CV.pdf" download><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg>Download CV</a>
+          </aside>
         </div>
       </section>
 
-      <section class="section wrap" aria-labelledby="work-title">
-        <div class="section-head section-head-row">
-          <div>
+      <section class="section wrap" id="work" aria-labelledby="work-title" style="padding-top:0">
+        <div class="section-head">
           <p class="eyebrow">Selected work</p>
           <h2 id="work-title">Things I&rsquo;ve built</h2>
           <p class="section-sub">Backends and agents, strongest first.</p>
-          </div>
-          <a href="/work/">All projects</a>
         </div>
-        <ul class="row-list">
-          <li>
-            <a class="row-link" href="/work/#finops-agent">
-              <span class="row-title">FinOps Agent</span>
-              <span class="row-meta">Autonomous accounts-receivable agent with a three-tier autonomy gate.</span>
-              <span class="row-stack">FastAPI · Claude API · JWT</span>
-            </a>
+        <ul class="grid grid-3 plain-list" role="list">
+          <li class="pcard">
+            <div class="pcard-top"><span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span class="badge badge-wip">In progress</span></div>
+            <h3><a href="/work/#london-blue-plaques">London Blue Plaques Explorer</a></h3>
+            <p class="pcard-meta">Started <time datetime="2026-10-13">13 Oct 2026</time></p>
+            <p class="pcard-desc">Flask + MongoDB REST API with visit tracking and a &lsquo;nearby plaques&rsquo; geo search.</p>
+            <p class="mono-tags">Python · Flask · MongoDB · Geo queries</p>
           </li>
-          <li>
-            <a class="row-link" href="/work/#pr-assistant-api">
-              <span class="row-title">PR Assistant API</span>
-              <span class="row-meta">Async code-review API: submit a GitHub PR or raw diff, get back structured findings (line, severity, issue, fix).</span>
-              <span class="row-stack">FastAPI · Pydantic · pytest</span>
-            </a>
+          <li class="pcard">
+            <div class="pcard-top"><span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span><span class="badge badge-accent">Hackathon</span></div>
+            <h3><a href="/work/#finops-agent">FinOps Agent</a></h3>
+            <p class="pcard-meta">Built at Cursor Hack London · <time datetime="2026-04-30">30 Apr 2026</time></p>
+            <p class="pcard-desc">Autonomous accounts-receivable agent with a three-tier autonomy gate.</p>
+            <p class="mono-tags">FastAPI · Claude API · JWT · bcrypt · WebSockets · SQLite · React</p>
           </li>
-          <li>
-            <a class="row-link" href="/work/#fitflow">
-              <span class="row-title">FitFlow</span>
-              <span class="row-meta">AI fitness-coaching bot on Telegram, grounded in your Strava data.</span>
-              <span class="row-stack">Claude API · Supabase · Strava OAuth2</span>
-            </a>
-          </li>
-          <li>
-            <a class="row-link" href="/work/#london-blue-plaques">
-              <span class="row-title">London Blue Plaques Explorer</span>
-              <span class="row-meta">A REST API for exploring London&rsquo;s blue plaques, built on Open Plaques data.</span>
-              <span class="row-stack">Python · Flask · MongoDB</span>
-            </a>
+          <li class="pcard">
+            <div class="pcard-top"><span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span><span class="badge badge-accent">Deployed</span></div>
+            <h3><a href="/work/#fitflow">FitFlow</a></h3>
+            <p class="pcard-meta">Published <time datetime="2026-04-14">14 Apr 2026</time> · updated <time datetime="2026-05-06">6 May 2026</time> · deployed on Render</p>
+            <p class="pcard-desc">AI fitness-coaching bot on Telegram, grounded in your Strava and Garmin data.</p>
+            <p class="mono-tags">TypeScript · Claude API · Supabase · OAuth2 · Docker · Render</p>
           </li>
         </ul>
+        <p class="more-row"><a class="more-link" href="/work/">All projects <span aria-hidden="true">&rarr;</span></a></p>
       </section>
 
-      <section class="section wrap" aria-labelledby="stack-title" style="padding-top:0">
-        <div class="section-head">
-          <p class="eyebrow">Tech stack</p>
-          <h2 id="stack-title">Tools I work with</h2>
-          <p class="section-sub">Grouped by where they sit in the system.</p>
+      <section class="section stack" aria-labelledby="stack-title" style="padding-top:0">
+        <div class="floaters" aria-hidden="true">
+          <svg viewBox="0 0 24 24" style="top:8%;left:6%"><path d="M11.9 2C6.8 2 7.1 4.2 7.1 4.2v2.3H12v.7H5.2S2 6.8 2 11.9s2.8 4.9 2.8 4.9h1.7v-2.4s-.1-2.8 2.8-2.8h4.8s2.7 0 2.7-2.6V4.6S17.2 2 11.9 2zM9.2 3.5a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8zM12.1 22c5.1 0 4.8-2.2 4.8-2.2v-2.3H12v-.7h6.8s3.2.4 3.2-4.7-2.8-4.9-2.8-4.9h-1.7v2.4s.1 2.8-2.8 2.8H9.9s-2.7 0-2.7 2.6v4.4S6.8 22 12.1 22zm2.7-1.5a.9.9 0 1 1 0-1.8.9.9 0 0 1 0 1.8z"/></svg>
+          <svg viewBox="0 0 24 24" style="top:18%;right:8%"><path fill-rule="evenodd" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1 17v-6H7.5L13 5v6h3.5L11 19z"/></svg>
+          <svg viewBox="0 0 24 24" style="top:46%;left:2%"><path d="M3 11h18c0 4.5-3.5 8-9 8-4.5 0-7.5-2.5-9-8zM5 8h2.5v2.5H5zM8.2 8h2.5v2.5H8.2zM11.4 8h2.5v2.5h-2.5zM14.6 8h2.5v2.5h-2.5zM8.2 4.8h2.5v2.5H8.2zM11.4 4.8h2.5v2.5h-2.5z"/></svg>
+          <svg viewBox="0 0 24 24" style="top:70%;right:4%"><path fill-rule="evenodd" d="M12 2C7 2 4 3.5 4 5.5v13C4 20.5 7 22 12 22s8-1.5 8-3.5v-13C20 3.5 17 2 12 2zm0 2c3.9 0 6 1 6 1.5S15.9 7 12 7 6 6 6 5.5 8.1 4 12 4z"/></svg>
+          <svg viewBox="0 0 24 24" style="top:88%;left:22%"><path d="M12 2c-.5 2-4.5 5-4.5 10.5 0 4 2.6 6.4 3.8 7.2l.3 2.3h.8l.3-2.3c1.2-.8 3.8-3.2 3.8-7.2C16.5 7 12.5 4 12 2z"/></svg>
+          <svg viewBox="0 0 24 24" style="top:4%;left:48%"><path fill-rule="evenodd" d="M3 3h18v18H3zM6 10h6v1.6H9.8V18H8.2v-6.4H6zm11.5.2c-1.9-.6-3.7 0-3.7 1.9 0 2.5 3.3 1.9 3.3 3.3 0 .8-1.5 1.1-3.2.2v1.7c2.2.9 4.8.4 4.8-1.9 0-2.6-3.3-2.1-3.3-3.3 0-.7 1.2-.9 2.1-.5z"/></svg>
+          <svg viewBox="0 0 24 24" style="top:56%;right:22%"><path fill-rule="evenodd" d="M12 1.5 22.5 12 12 22.5 1.5 12zm-2.5 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
+          <svg viewBox="0 0 24 24" style="top:34%;left:30%"><path d="M12 1.5 21 6.75v10.5L12 22.5 3 17.25V6.75z"/></svg>
+          <svg viewBox="0 0 24 24" style="top:84%;right:40%"><path d="m12 2 2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z"/></svg>
         </div>
-        <div class="stack-grid">
-          <div class="card">
-            <h3>Languages</h3>
-            <ul class="tags"><li>Python</li><li>TypeScript</li><li>SQL</li><li>R</li></ul>
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Tech stack</p>
+            <h2 id="stack-title">Tools I work with</h2>
+            <p class="section-sub">Grouped by where they sit in the system.</p>
           </div>
-          <div class="card">
-            <h3>Backend</h3>
-            <ul class="tags"><li>FastAPI</li><li>Flask</li><li>Node.js</li><li>REST APIs</li><li>WebSockets</li><li>JWT &amp; bcrypt auth</li><li>OAuth2</li><li>pytest</li></ul>
-          </div>
-          <div class="card">
-            <h3>Databases</h3>
-            <ul class="tags"><li>PostgreSQL (Supabase)</li><li>MongoDB</li><li>SQLite</li><li>MySQL</li></ul>
-          </div>
-          <div class="card">
-            <h3>AI</h3>
-            <ul class="tags"><li>Claude API</li><li>Tool use &amp; agent loops</li><li>Prompt design &amp; guardrails</li><li>Claude Code</li></ul>
-          </div>
-          <div class="card">
-            <h3>DevOps &amp; Tools</h3>
-            <ul class="tags"><li>Docker</li><li>Render</li><li>Git &amp; GitHub</li><li>Jupyter &amp; Pandas</li><li>Power BI</li></ul>
+          <div class="stack-groups">
+            <div>
+              <h3 class="chip-label">Languages</h3>
+              <ul class="chips"><li>Python</li><li>TypeScript</li><li>Java</li><li>SQL</li><li>R</li></ul>
+            </div>
+            <div>
+              <h3 class="chip-label">Backend</h3>
+              <ul class="chips"><li>FastAPI</li><li>Flask</li><li>Node.js</li><li>REST APIs</li><li>WebSockets</li><li>JWT &amp; bcrypt auth</li><li>OAuth2</li><li>pytest</li></ul>
+            </div>
+            <div>
+              <h3 class="chip-label">Databases</h3>
+              <ul class="chips"><li>PostgreSQL (Supabase)</li><li>MongoDB</li><li>SQLite</li><li>MySQL</li></ul>
+            </div>
+            <div>
+              <h3 class="chip-label">AI</h3>
+              <ul class="chips"><li>Claude API</li><li>Tool use &amp; agent loops</li><li>Prompt design &amp; guardrails</li><li>Claude Code</li></ul>
+            </div>
+            <div>
+              <h3 class="chip-label">DevOps &amp; Tools</h3>
+              <ul class="chips"><li>Docker</li><li>Render</li><li>Git &amp; GitHub</li><li>Jupyter &amp; Pandas</li><li>Power BI</li></ul>
+            </div>
           </div>
         </div>
       </section>
-
-      <!-- Latest writing: hidden until the first note is published on /notes/. -->
     </main>
-    <section class="cta-band" aria-labelledby="cta-title">
-      <div class="wrap">
-        <p class="eyebrow">Let&rsquo;s talk</p>
-        <h2 id="cta-title">Hiring for a backend role?</h2>
-        <p>Graduate &amp; junior roles from June 2027, part-time roles now.</p>
-        <a class="btn btn-primary btn-lg" href="/contact/">Get in touch</a>
-      </div>
-    </section>
     <footer class="site-footer">
-      <div class="wrap footer-inner">
-        <p>&copy; 2026 Doniyor Mekhmonov · London</p>
-        <div class="footer-right">
-          <ul class="footer-links">
-            <li><a href="/contact/">Contact</a></li>
-            <li><a href="/docs/Doniyor_Mekhmonov_CV.pdf" download>CV (PDF)</a></li>
-          </ul>
-          <ul class="social" aria-label="Social links"><li><a href="https://github.com/doniyor-py" rel="me noopener" aria-label="GitHub profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57l-.02-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.840 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.31-5.47-1.34-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.290-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.37.81 1.1.81 2.22l-.01 3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></svg></a></li><li><a href="https://www.linkedin.com/in/doniyor-mekhmonov-a50b64329" rel="me noopener" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.640-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.56V9h3.56v11.45Z"/></svg></a></li><li><a href="https://www.instagram.com/doniyor.ysg/" rel="me noopener" aria-label="Instagram profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></a></li><li><a href="https://t.me/doniyormxn" rel="me noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.94 4.6 18.9 19.02c-.23 1.02-.83 1.27-1.69.79l-4.66-3.43-2.25 2.16c-.25.25-.46.46-.94.46l.33-4.74 8.63-7.8c.38-.33-.08-.52-.58-.19L7.07 12.98l-4.6-1.44c-1-.31-1.02-1 .21-1.48l17.98-6.930c.83-.31 1.56.19 1.28 1.47Z"/></svg></a></li></ul>
+      <div class="wrap">
+        <div class="footer-cta">
+          <div>
+            <p class="footer-cta-q">Hiring for a backend role?</p>
+            <p class="footer-cta-sub">Graduate &amp; junior roles from June 2027, part-time roles now.</p>
+          </div>
+          <a class="btn btn-primary" href="/contact/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Get in touch</a>
         </div>
+        <div class="footer-row">
+          <nav aria-label="Footer"><ul class="footer-links"><li><a href="/contact/">Contact</a></li><li><a href="/docs/Doniyor_Mekhmonov_CV.pdf" download>CV (PDF)</a></li></ul></nav>
+          <ul class="social"><li><a href="https://github.com/doniyor-py" rel="me noopener" aria-label="GitHub profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li><li><a href="https://www.linkedin.com/in/doniyor-mekhmonov-a50b64329" rel="me noopener" aria-label="LinkedIn profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li><li><a href="https://www.instagram.com/doniyor.ysg/" rel="me noopener" aria-label="Instagram profile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a></li><li><a href="https://t.me/doniyormxn" rel="me noopener" aria-label="Telegram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg></a></li></ul>
+        </div>
+        <p class="copyright">&copy; 2026 Doniyor Mekhmonov · London</p>
       </div>
     </footer>
+    <script src="/assets/js/site.js" defer></script>
   </body>
 </html>
